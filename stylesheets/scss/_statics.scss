@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "SF Regular";
+    src: url("/font/System San Francisco Display Regular.ttf");
+}
+@font-face {
+    font-family: "SF Bold";
+    src: url("/font/System San Francisco Display Bold.ttf");
+}
+@font-face {
+    font-family: "TG Bold";
+    src: url("/font/TradeGothic-Bold.ttf");
+}
+@font-face {
+    font-family: "TG CondEighteen";
+    src: url("/font/TradeGothic-CondEighteen.ttf");
+}
+@font-face {
+    font-family: "TG LightOblique";
+    src: url("/font/TradeGothic-LightOblique.ttf");
+}
+
+$def-font-stack : "SF Regular";
+$default-back   : #404040;
