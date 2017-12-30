@@ -1,0 +1,17 @@
+$shadow-opacity	: .2;
+
+svg#side-viz {
+	text { fill: white; }
+	#axis--x {
+		path { stroke: none; }
+		.tick text.shadow { opacity: $shadow-opacity; }
+	}
+	#bar-wrapper {
+		.group-bar {
+			.bar.fill { fill-opacity: .1; }
+			&.shadow { opacity: $shadow-opacity; }
+			&.spotlight { .bar.fill { fill-opacity: .4; }}
+		}
+	}
+	#grid-wrapper { stroke: lightgray; stroke-dasharray: 1.5; stroke-width: .25; }
+}
