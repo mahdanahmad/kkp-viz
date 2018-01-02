@@ -2,6 +2,7 @@
 @import "mixins";
 
 @import "viz/side";
+@import "viz/scatter";
 
 a { cursor: pointer; text-decoration: none; color: black; }
 ul { list-style-type: none; margin: 0px; padding: 0px; }
@@ -39,5 +40,10 @@ div#root {
 		& > div { display: inline-block; height: 100%; }
 		#side-bar { width: $side-width; }
 		#mein-bar { width: calc(100% - #{$side-width}); }
+
+		svg {
+			text { fill: white; }
+			.grid-wrapper { stroke: lightgray; stroke-dasharray: 1.5; stroke-width: .25; }
+		}
 	}
 }

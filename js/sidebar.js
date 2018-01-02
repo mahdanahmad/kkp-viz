@@ -9,7 +9,7 @@ function createSide(unit, palette, data) {
 	let height			= canvasHeight - margin.top - margin.bottom;
 
 	let x 				= d3.scaleLinear().range([0, width]).domain([0, _.chain(data).values().max().value()]);
-	let y 				= d3.scaleBand().range([height, 0]).padding(0).domain(_.reverse(unit));
+	let y 				= d3.scaleBand().range([0, height]).padding(0).domain(unit);
 
 	let svg = d3.select("#side-bar").append("svg")
 		.attr("id", "side-viz")
@@ -24,7 +24,11 @@ function createSide(unit, palette, data) {
 		.call(d3.axisLeft(y).tickSize(0))
 		.selectAll(".tick text")
 			.attr('id', function() { return _.kebabCase(d3.select(this).text()); })
-			.call(wrap, (margin.left - 15), true);
+			.attr('class', 'cursor-pointer')
+			.call(wrap, (margin.left - 15), true)
+			.on('mouseover', onMouseOver)
+			.on('mouseout', onMouseOut)
+			.on('click', onClick);
 
 	let groupBar	= svg.append('g')
 						.attr("id", "bar-wrapper")
@@ -62,7 +66,7 @@ function createSide(unit, palette, data) {
 		.on('click', onClick);
 
 	svg.append('g')
-		.attr('id', 'grid-wrapper')
+		.attr('class', 'grid-wrapper')
 		.selectAll('grid')
 		.data(_.times(unit.length, (o) => ( (o + 1) * y.bandwidth() )))
 			.enter().append('line')
