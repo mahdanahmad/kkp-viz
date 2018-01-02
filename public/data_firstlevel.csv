@@ -1,0 +1,123 @@
+unit;belanja;anggaran
+Sekretariat Jenderal;Gaji PNS;29336630000
+Sekretariat Jenderal;Gaji Non PNS;231000000
+Sekretariat Jenderal;Belanja Lembur;6940386000
+Sekretariat Jenderal;Tunjangan Khusus;27000000000
+Sekretariat Jenderal;Barang Operasional;62919596000
+Sekretariat Jenderal;Barang Non Operasional;73945101000
+Sekretariat Jenderal;Barang Persediaan;10202700000
+Sekretariat Jenderal;Jasa;67366132000
+Sekretariat Jenderal;Pemeliharaan;36004480000
+Sekretariat Jenderal;Perjalanan Dalam Negeri;66823921000
+Sekretariat Jenderal;Perjalanan Luar Negeri;14135000000
+Sekretariat Jenderal;Modal Peralatan dan Mesin;32922153000
+Sekretariat Jenderal;Modal Gedung dan Bangunan;11001790000
+Sekretariat Jenderal;Modal Fisik Lainnya;13310060000
+Inspektorat Jenderal;Gaji PNS;15282626000
+Inspektorat Jenderal;Belanja Lembur;66432000
+Inspektorat Jenderal;Tunjangan Khusus;12119877000
+Inspektorat Jenderal;Barang Operasional;1599180000
+Inspektorat Jenderal;Barang Non Operasional;3507111000
+Inspektorat Jenderal;Barang Persediaan;263760000
+Inspektorat Jenderal;Jasa;1342110000
+Inspektorat Jenderal;Pemeliharaan;961160000
+Inspektorat Jenderal;Perjalanan Dalam Negeri;42449652000
+Inspektorat Jenderal;Perjalanan Luar Negeri;50000000
+Inspektorat Jenderal;Modal Peralatan dan Mesin;1213461000
+Ditjen Perikanan Tangkap;Gaji PNS;27162889000
+Ditjen Perikanan Tangkap;Belanja Lembur;52030000
+Ditjen Perikanan Tangkap;Tunjangan Khusus;19715622000
+Ditjen Perikanan Tangkap;Barang Operasional;12364589000
+Ditjen Perikanan Tangkap;Barang Non Operasional;64143257000
+Ditjen Perikanan Tangkap;Barang Persediaan;3602344000
+Ditjen Perikanan Tangkap;Jasa;70222948000
+Ditjen Perikanan Tangkap;Pemeliharaan;11078404000
+Ditjen Perikanan Tangkap;Perjalanan Dalam Negeri;125810000000
+Ditjen Perikanan Tangkap;Perjalanan Luar Negeri;2380976000
+Ditjen Perikanan Tangkap;Barang Seserahan Masyarakat/Pemda;768022000000
+Ditjen Perikanan Tangkap;Barang Seserahan Masyarakat/Pemda Lainnya;207521000000
+Ditjen Perikanan Tangkap;Modal Peralatan dan Mesin;92243577000
+Ditjen Perikanan Tangkap;Modal Gedung dan Bangunan;27560000000
+Ditjen Perikanan Tangkap;Modal Fisik Lainnya;74268675000
+Ditjen Perikanan Budidaya;Gaji PNS;33156321000
+Ditjen Perikanan Budidaya;Tunjangan Khusus;18065432000
+Ditjen Perikanan Budidaya;Barang Operasional;4715661000
+Ditjen Perikanan Budidaya;Barang Non Operasional;25531286000
+Ditjen Perikanan Budidaya;Barang Persediaan;1191584000
+Ditjen Perikanan Budidaya;Jasa;30858745000
+Ditjen Perikanan Budidaya;Pemeliharaan;4597615000
+Ditjen Perikanan Budidaya;Perjalanan Dalam Negeri;35037647000
+Ditjen Perikanan Budidaya;Perjalanan Luar Negeri;1000000000
+Ditjen Perikanan Budidaya;Barang Seserahan Masyarakat/Pemda;348655000000
+Ditjen Perikanan Budidaya;Barang Seserahan Masyarakat/Pemda Lainnya;32597330000
+Ditjen Perikanan Budidaya;Modal Peralatan dan Mesin;67689946000
+Ditjen Perikanan Budidaya;Modal Gedung dan Bangunan;12273330000
+Ditjen Perikanan Budidaya;Modal Fisik Lainnya;109787000000
+Ditjen PSDKP;Gaji PNS;34214231000
+Ditjen PSDKP;Belanja Lembur;866563000
+Ditjen PSDKP;Tunjangan Khusus;26214645000
+Ditjen PSDKP;Barang Operasional;10865176000
+Ditjen PSDKP;Barang Non Operasional;74745123000
+Ditjen PSDKP;Barang Persediaan;256424000000
+Ditjen PSDKP;Jasa;51262420000
+Ditjen PSDKP;Pemeliharaan;13999002000
+Ditjen PSDKP;Perjalanan Dalam Negeri;32133943000
+Ditjen PSDKP;Perjalanan Luar Negeri;2810000000
+Ditjen PSDKP;Modal Peralatan dan Mesin;154298000000
+Ditjen PSDKP;Modal Gedung dan Bangunan;20600000
+Ditjen PSDKP;Modal Fisik Lainnya;49500000
+Ditjen PDS;Gaji PNS;23076407000
+Ditjen PDS;Belanja Lembur;800514000
+Ditjen PDS;Tunjangan Khusus;17544444000
+Ditjen PDS;Barang Operasional;4663631000
+Ditjen PDS;Barang Non Operasional;18910312000
+Ditjen PDS;Barang Persediaan;668839000
+Ditjen PDS;Jasa;68631142000
+Ditjen PDS;Pemeliharaan;3387971000
+Ditjen PDS;Perjalanan Dalam Negeri;25521667000
+Ditjen PDS;Perjalanan Luar Negeri;1660400000
+Ditjen PDS;Barang Seserahan Masyarakat/Pemda;713146000000
+Ditjen PDS;Barang Seserahan Masyarakat/Pemda Lainnya;527500000
+Ditjen PDS;Modal Tanah;2000000000
+Ditjen PDS;Modal Peralatan dan Mesin;7690725000
+Ditjen PDS;Modal Gedung dan Bangunan;130321000000
+Ditjen Pengelolaan Ruang Laut;Gaji PNS;20687545000
+Ditjen Pengelolaan Ruang Laut;Gaji Non PNS;77000000
+Ditjen Pengelolaan Ruang Laut;Tunjangan Khusus;24730277000
+Ditjen Pengelolaan Ruang Laut;Barang Operasional;5618880000
+Ditjen Pengelolaan Ruang Laut;Barang Non Operasional;57222013000
+Ditjen Pengelolaan Ruang Laut;Barang Persediaan;944830000
+Ditjen Pengelolaan Ruang Laut;Jasa;145462000000
+Ditjen Pengelolaan Ruang Laut;Pemeliharaan;2675416000
+Ditjen Pengelolaan Ruang Laut;Perjalanan Dalam Negeri;64920650000
+Ditjen Pengelolaan Ruang Laut;Perjalanan Luar Negeri;5052636000
+Ditjen Pengelolaan Ruang Laut;Barang Seserahan Masyarakat/Pemda;243111000000
+Ditjen Pengelolaan Ruang Laut;Barang Seserahan Masyarakat/Pemda Lainnya;38098465000
+Ditjen Pengelolaan Ruang Laut;Modal Peralatan dan Mesin;34032200000
+Ditjen Pengelolaan Ruang Laut;Modal Gedung dan Bangunan;2000000000
+Badan Riset & SDM KP;Gaji PNS;137183000000
+Badan Riset & SDM KP;Gaji Non PNS;100205000
+Badan Riset & SDM KP;Belanja Lembur;225513000
+Badan Riset & SDM KP;Tunjangan Khusus;135795000000
+Badan Riset & SDM KP;Barang Operasional;19168273000
+Badan Riset & SDM KP;Barang Non Operasional;248831000000
+Badan Riset & SDM KP;Barang Persediaan;2158221000
+Badan Riset & SDM KP;Jasa;27475915000
+Badan Riset & SDM KP;Pemeliharaan;8027242000
+Badan Riset & SDM KP;Perjalanan Dalam Negeri;45030685000
+Badan Riset & SDM KP;Perjalanan Luar Negeri;1989280000
+Badan Riset & SDM KP;Modal Tanah;599128000
+Badan Riset & SDM KP;Modal Peralatan dan Mesin;98333759000
+Badan Riset & SDM KP;Modal Gedung dan Bangunan;545374000000
+Badan Riset & SDM KP;Modal Jalan, Irigasi dan Jaringan;5310336000
+Badan Riset & SDM KP;Modal Fisik Lainnya;24578001000
+Badan Karantina Ikan, Pengendalian Mutu & Keamanan Hasil Perikanan;Gaji PNS;15802987000
+Badan Karantina Ikan, Pengendalian Mutu & Keamanan Hasil Perikanan;Tunjangan Khusus;10193463000
+Badan Karantina Ikan, Pengendalian Mutu & Keamanan Hasil Perikanan;Barang Operasional;4746678000
+Badan Karantina Ikan, Pengendalian Mutu & Keamanan Hasil Perikanan;Barang Non Operasional;11230117000
+Badan Karantina Ikan, Pengendalian Mutu & Keamanan Hasil Perikanan;Barang Persediaan;2276022000
+Badan Karantina Ikan, Pengendalian Mutu & Keamanan Hasil Perikanan;Jasa;12451393000
+Badan Karantina Ikan, Pengendalian Mutu & Keamanan Hasil Perikanan;Pemeliharaan;1985394000
+Badan Karantina Ikan, Pengendalian Mutu & Keamanan Hasil Perikanan;Perjalanan Dalam Negeri;9358492000
+Badan Karantina Ikan, Pengendalian Mutu & Keamanan Hasil Perikanan;Perjalanan Luar Negeri;933834000
+Badan Karantina Ikan, Pengendalian Mutu & Keamanan Hasil Perikanan;Modal Peralatan dan Mesin;3959407000

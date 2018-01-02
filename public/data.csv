@@ -1,123 +1,597 @@
-unit;belanja;anggaran
-Sekretariat Jenderal;Gaji PNS;29336630000
-Sekretariat Jenderal;Gaji Non PNS;231000000
-Sekretariat Jenderal;Belanja Lembur;6940386000
-Sekretariat Jenderal;Tunjangan Khusus;27000000000
-Sekretariat Jenderal;Barang Operasional;62919596000
-Sekretariat Jenderal;Barang Non Operasional;73945101000
-Sekretariat Jenderal;Barang Persediaan;10202700000
-Sekretariat Jenderal;Jasa;67366132000
-Sekretariat Jenderal;Pemeliharaan;36004480000
-Sekretariat Jenderal;Perjalanan Dalam Negeri;66823921000
-Sekretariat Jenderal;Perjalanan Luar Negeri;14135000000
-Sekretariat Jenderal;Modal Peralatan dan Mesin;32922153000
-Sekretariat Jenderal;Modal Gedung dan Bangunan;11001790000
-Sekretariat Jenderal;Modal Fisik Lainnya;13310060000
-Inspektorat Jenderal;Gaji PNS;15282626000
-Inspektorat Jenderal;Belanja Lembur;66432000
-Inspektorat Jenderal;Tunjangan Khusus;12119877000
-Inspektorat Jenderal;Barang Operasional;1599180000
-Inspektorat Jenderal;Barang Non Operasional;3507111000
-Inspektorat Jenderal;Barang Persediaan;263760000
-Inspektorat Jenderal;Jasa;1342110000
-Inspektorat Jenderal;Pemeliharaan;961160000
-Inspektorat Jenderal;Perjalanan Dalam Negeri;42449652000
-Inspektorat Jenderal;Perjalanan Luar Negeri;50000000
-Inspektorat Jenderal;Modal Peralatan dan Mesin;1213461000
-Ditjen Perikanan Tangkap;Gaji PNS;27162889000
-Ditjen Perikanan Tangkap;Belanja Lembur;52030000
-Ditjen Perikanan Tangkap;Tunjangan Khusus;19715622000
-Ditjen Perikanan Tangkap;Barang Operasional;12364589000
-Ditjen Perikanan Tangkap;Barang Non Operasional;64143257000
-Ditjen Perikanan Tangkap;Barang Persediaan;3602344000
-Ditjen Perikanan Tangkap;Jasa;70222948000
-Ditjen Perikanan Tangkap;Pemeliharaan;11078404000
-Ditjen Perikanan Tangkap;Perjalanan Dalam Negeri;125810000000
-Ditjen Perikanan Tangkap;Perjalanan Luar Negeri;2380976000
-Ditjen Perikanan Tangkap;Barang Seserahan Masyarakat/Pemda;768022000000
-Ditjen Perikanan Tangkap;Barang Seserahan Masyarakat/Pemda Lainnya;207521000000
-Ditjen Perikanan Tangkap;Modal Peralatan dan Mesin;92243577000
-Ditjen Perikanan Tangkap;Modal Gedung dan Bangunan;27560000000
-Ditjen Perikanan Tangkap;Modal Fisik Lainnya;74268675000
-Ditjen Perikanan Budidaya;Gaji PNS;33156321000
-Ditjen Perikanan Budidaya;Tunjangan Khusus;18065432000
-Ditjen Perikanan Budidaya;Barang Operasional;4715661000
-Ditjen Perikanan Budidaya;Barang Non Operasional;25531286000
-Ditjen Perikanan Budidaya;Barang Persediaan;1191584000
-Ditjen Perikanan Budidaya;Jasa;30858745000
-Ditjen Perikanan Budidaya;Pemeliharaan;4597615000
-Ditjen Perikanan Budidaya;Perjalanan Dalam Negeri;35037647000
-Ditjen Perikanan Budidaya;Perjalanan Luar Negeri;1000000000
-Ditjen Perikanan Budidaya;Barang Seserahan Masyarakat/Pemda;348655000000
-Ditjen Perikanan Budidaya;Barang Seserahan Masyarakat/Pemda Lainnya;32597330000
-Ditjen Perikanan Budidaya;Modal Peralatan dan Mesin;67689946000
-Ditjen Perikanan Budidaya;Modal Gedung dan Bangunan;12273330000
-Ditjen Perikanan Budidaya;Modal Fisik Lainnya;109787000000
-Ditjen PSDKP;Gaji PNS;34214231000
-Ditjen PSDKP;Belanja Lembur;866563000
-Ditjen PSDKP;Tunjangan Khusus;26214645000
-Ditjen PSDKP;Barang Operasional;10865176000
-Ditjen PSDKP;Barang Non Operasional;74745123000
-Ditjen PSDKP;Barang Persediaan;256424000000
-Ditjen PSDKP;Jasa;51262420000
-Ditjen PSDKP;Pemeliharaan;13999002000
-Ditjen PSDKP;Perjalanan Dalam Negeri;32133943000
-Ditjen PSDKP;Perjalanan Luar Negeri;2810000000
-Ditjen PSDKP;Modal Peralatan dan Mesin;154298000000
-Ditjen PSDKP;Modal Gedung dan Bangunan;20600000
-Ditjen PSDKP;Modal Fisik Lainnya;49500000
-Ditjen PDS;Gaji PNS;23076407000
-Ditjen PDS;Belanja Lembur;800514000
-Ditjen PDS;Tunjangan Khusus;17544444000
-Ditjen PDS;Barang Operasional;4663631000
-Ditjen PDS;Barang Non Operasional;18910312000
-Ditjen PDS;Barang Persediaan;668839000
-Ditjen PDS;Jasa;68631142000
-Ditjen PDS;Pemeliharaan;3387971000
-Ditjen PDS;Perjalanan Dalam Negeri;25521667000
-Ditjen PDS;Perjalanan Luar Negeri;1660400000
-Ditjen PDS;Barang Seserahan Masyarakat/Pemda;713146000000
-Ditjen PDS;Barang Seserahan Masyarakat/Pemda Lainnya;527500000
-Ditjen PDS;Modal Tanah;2000000000
-Ditjen PDS;Modal Peralatan dan Mesin;7690725000
-Ditjen PDS;Modal Gedung dan Bangunan;130321000000
-Ditjen Pengelolaan Ruang Laut;Gaji PNS;20687545000
-Ditjen Pengelolaan Ruang Laut;Gaji Non PNS;77000000
-Ditjen Pengelolaan Ruang Laut;Tunjangan Khusus;24730277000
-Ditjen Pengelolaan Ruang Laut;Barang Operasional;5618880000
-Ditjen Pengelolaan Ruang Laut;Barang Non Operasional;57222013000
-Ditjen Pengelolaan Ruang Laut;Barang Persediaan;944830000
-Ditjen Pengelolaan Ruang Laut;Jasa;145462000000
-Ditjen Pengelolaan Ruang Laut;Pemeliharaan;2675416000
-Ditjen Pengelolaan Ruang Laut;Perjalanan Dalam Negeri;64920650000
-Ditjen Pengelolaan Ruang Laut;Perjalanan Luar Negeri;5052636000
-Ditjen Pengelolaan Ruang Laut;Barang Seserahan Masyarakat/Pemda;243111000000
-Ditjen Pengelolaan Ruang Laut;Barang Seserahan Masyarakat/Pemda Lainnya;38098465000
-Ditjen Pengelolaan Ruang Laut;Modal Peralatan dan Mesin;34032200000
-Ditjen Pengelolaan Ruang Laut;Modal Gedung dan Bangunan;2000000000
-Badan Riset & SDM KP;Gaji PNS;137183000000
-Badan Riset & SDM KP;Gaji Non PNS;100205000
-Badan Riset & SDM KP;Belanja Lembur;225513000
-Badan Riset & SDM KP;Tunjangan Khusus;135795000000
-Badan Riset & SDM KP;Barang Operasional;19168273000
-Badan Riset & SDM KP;Barang Non Operasional;248831000000
-Badan Riset & SDM KP;Barang Persediaan;2158221000
-Badan Riset & SDM KP;Jasa;27475915000
-Badan Riset & SDM KP;Pemeliharaan;8027242000
-Badan Riset & SDM KP;Perjalanan Dalam Negeri;45030685000
-Badan Riset & SDM KP;Perjalanan Luar Negeri;1989280000
-Badan Riset & SDM KP;Modal Tanah;599128000
-Badan Riset & SDM KP;Modal Peralatan dan Mesin;98333759000
-Badan Riset & SDM KP;Modal Gedung dan Bangunan;545374000000
-Badan Riset & SDM KP;Modal Jalan, Irigasi dan Jaringan;5310336000
-Badan Riset & SDM KP;Modal Fisik Lainnya;24578001000
-Badan Karantina Ikan, Pengendalian Mutu & Keamanan Hasil Perikanan;Gaji PNS;15802987000
-Badan Karantina Ikan, Pengendalian Mutu & Keamanan Hasil Perikanan;Tunjangan Khusus;10193463000
-Badan Karantina Ikan, Pengendalian Mutu & Keamanan Hasil Perikanan;Barang Operasional;4746678000
-Badan Karantina Ikan, Pengendalian Mutu & Keamanan Hasil Perikanan;Barang Non Operasional;11230117000
-Badan Karantina Ikan, Pengendalian Mutu & Keamanan Hasil Perikanan;Barang Persediaan;2276022000
-Badan Karantina Ikan, Pengendalian Mutu & Keamanan Hasil Perikanan;Jasa;12451393000
-Badan Karantina Ikan, Pengendalian Mutu & Keamanan Hasil Perikanan;Pemeliharaan;1985394000
-Badan Karantina Ikan, Pengendalian Mutu & Keamanan Hasil Perikanan;Perjalanan Dalam Negeri;9358492000
-Badan Karantina Ikan, Pengendalian Mutu & Keamanan Hasil Perikanan;Perjalanan Luar Negeri;933834000
-Badan Karantina Ikan, Pengendalian Mutu & Keamanan Hasil Perikanan;Modal Peralatan dan Mesin;3959407000
+kedeputian;direktorat;belanja;anggaran
+Sekretariat Jenderal;Biro Umum;Belanja Gaji dan Tunjangan PNS;29336630000
+Sekretariat Jenderal;Total;Belanja Gaji dan Tunjangan PNS;29336630000
+Sekretariat Jenderal;Biro Umum;Belanja Gaji dan Tunjangan Pegawai Non PNS;231000000
+Sekretariat Jenderal;Total;Belanja Gaji dan Tunjangan Pegawai Non PNS;231000000
+Sekretariat Jenderal;Biro Umum;Belanja Lembur;6940386000
+Sekretariat Jenderal;Total;Belanja Lembur;6940386000
+Sekretariat Jenderal;Biro Umum;Belanja Tunj. Khusus & Belanja Pegawai Transito;27000000000
+Sekretariat Jenderal;Total;Belanja Tunj. Khusus & Belanja Pegawai Transito;27000000000
+Sekretariat Jenderal;Biro Hukum;Belanja Barang Operasional;554390000
+Sekretariat Jenderal;Biro SDM;Belanja Barang Operasional;583790000
+Sekretariat Jenderal;Biro Keuangan;Belanja Barang Operasional;1020721000
+Sekretariat Jenderal;Biro Perencanaan;Belanja Barang Operasional;741145000
+Sekretariat Jenderal;Biro Umum;Belanja Barang Operasional;36103035000
+Sekretariat Jenderal;Biro Kerjasama;Belanja Barang Operasional;1872612000
+Sekretariat Jenderal;Pusdatin;Belanja Barang Operasional;13736863000
+Sekretariat Jenderal;LPMUKP;Belanja Barang Operasional;8307040000
+Sekretariat Jenderal;Total;Belanja Barang Operasional;62919596000
+Sekretariat Jenderal;Biro Hukum;Belanja Barang Non Operasional;2544559000
+Sekretariat Jenderal;Biro SDM;Belanja Barang Non Operasional;22359352000
+Sekretariat Jenderal;Biro Keuangan;Belanja Barang Non Operasional;2942805000
+Sekretariat Jenderal;Biro Perencanaan;Belanja Barang Non Operasional;6960494000
+Sekretariat Jenderal;Biro Umum;Belanja Barang Non Operasional;9635175000
+Sekretariat Jenderal;Biro Kerjasama;Belanja Barang Non Operasional;1598509000
+Sekretariat Jenderal;Pusdatin;Belanja Barang Non Operasional;26201052000
+Sekretariat Jenderal;LPMUKP;Belanja Barang Non Operasional;1703155000
+Sekretariat Jenderal;Total;Belanja Barang Non Operasional;73945101000
+Sekretariat Jenderal;Biro Hukum;Belanja Barang Persediaan;1200649000
+Sekretariat Jenderal;Biro SDM;Belanja Barang Persediaan;237250000
+Sekretariat Jenderal;Biro Keuangan;Belanja Barang Persediaan;1911530000
+Sekretariat Jenderal;Biro Perencanaan;Belanja Barang Persediaan;794200000
+Sekretariat Jenderal;Biro Umum;Belanja Barang Persediaan;4361171000
+Sekretariat Jenderal;Biro Kerjasama;Belanja Barang Persediaan;793500000
+Sekretariat Jenderal;Pusdatin;Belanja Barang Persediaan;510000000
+Sekretariat Jenderal;LPMUKP;Belanja Barang Persediaan;394400000
+Sekretariat Jenderal;Total;Belanja Barang Persediaan;10202700000
+Sekretariat Jenderal;Biro Hukum;Belanja Jasa;3645418000
+Sekretariat Jenderal;Biro SDM;Belanja Jasa;3895710000
+Sekretariat Jenderal;Biro Keuangan;Belanja Jasa;1496300000
+Sekretariat Jenderal;Biro Perencanaan;Belanja Jasa;4658748000
+Sekretariat Jenderal;Biro Umum;Belanja Jasa;41353290000
+Sekretariat Jenderal;Biro Kerjasama;Belanja Jasa;5782866000
+Sekretariat Jenderal;Pusdatin;Belanja Jasa;5292200000
+Sekretariat Jenderal;LPMUKP;Belanja Jasa;1241600000
+Sekretariat Jenderal;Total;Belanja Jasa;67366132000
+Sekretariat Jenderal;Biro Hukum;Belanja Pemeliharaan;310280000
+Sekretariat Jenderal;Biro SDM;Belanja Pemeliharaan;270408000
+Sekretariat Jenderal;Biro Keuangan;Belanja Pemeliharaan;324610000
+Sekretariat Jenderal;Biro Perencanaan;Belanja Pemeliharaan;519780000
+Sekretariat Jenderal;Biro Umum;Belanja Pemeliharaan;32548022000
+Sekretariat Jenderal;Biro Kerjasama;Belanja Pemeliharaan;335890000
+Sekretariat Jenderal;Pusdatin;Belanja Pemeliharaan;1325950000
+Sekretariat Jenderal;LPMUKP;Belanja Pemeliharaan;369540000
+Sekretariat Jenderal;Total;Belanja Pemeliharaan;36004480000
+Sekretariat Jenderal;Biro Hukum;Belanja Perjalanan Dalam Negeri;9177794000
+Sekretariat Jenderal;Biro SDM;Belanja Perjalanan Dalam Negeri;3881050000
+Sekretariat Jenderal;Biro Keuangan;Belanja Perjalanan Dalam Negeri;7874490000
+Sekretariat Jenderal;Biro Perencanaan;Belanja Perjalanan Dalam Negeri;9775633000
+Sekretariat Jenderal;Biro Umum;Belanja Perjalanan Dalam Negeri;13950700000
+Sekretariat Jenderal;Biro Kerjasama;Belanja Perjalanan Dalam Negeri;5167479000
+Sekretariat Jenderal;Pusdatin;Belanja Perjalanan Dalam Negeri;10531425000
+Sekretariat Jenderal;LPMUKP;Belanja Perjalanan Dalam Negeri;6465350000
+Sekretariat Jenderal;Total;Belanja Perjalanan Dalam Negeri;66823921000
+Sekretariat Jenderal;Biro Hukum;Belanja Perjalanan Luar Negeri;450000000
+Sekretariat Jenderal;Biro SDM;Belanja Perjalanan Luar Negeri;280000000
+Sekretariat Jenderal;Biro Keuangan;Belanja Perjalanan Luar Negeri;300000000
+Sekretariat Jenderal;Biro Perencanaan;Belanja Perjalanan Luar Negeri;300000000
+Sekretariat Jenderal;Biro Umum;Belanja Perjalanan Luar Negeri;7800000000
+Sekretariat Jenderal;Biro Kerjasama;Belanja Perjalanan Luar Negeri;4805000000
+Sekretariat Jenderal;Pusdatin;Belanja Perjalanan Luar Negeri;200000000
+Sekretariat Jenderal;Total;Belanja Perjalanan Luar Negeri;14135000000
+Sekretariat Jenderal;Biro Hukum;Belanja Modal Peralatan dan Mesin;656000000
+Sekretariat Jenderal;Biro SDM;Belanja Modal Peralatan dan Mesin;556800000
+Sekretariat Jenderal;Biro Keuangan;Belanja Modal Peralatan dan Mesin;929544000
+Sekretariat Jenderal;Biro Perencanaan;Belanja Modal Peralatan dan Mesin;250000000
+Sekretariat Jenderal;Biro Umum;Belanja Modal Peralatan dan Mesin;14717415000
+Sekretariat Jenderal;Biro Kerjasama;Belanja Modal Peralatan dan Mesin;535394000
+Sekretariat Jenderal;Pusdatin;Belanja Modal Peralatan dan Mesin;14392450000
+Sekretariat Jenderal;LPMUKP;Belanja Modal Peralatan dan Mesin;884550000
+Sekretariat Jenderal;Total;Belanja Modal Peralatan dan Mesin;32922153000
+Sekretariat Jenderal;Biro Umum;Belanja Modal Gedung dan Bangunan;10601790000
+Sekretariat Jenderal;Pusdatin;Belanja Modal Gedung dan Bangunan;400000000
+Sekretariat Jenderal;Total;Belanja Modal Gedung dan Bangunan;11001790000
+Sekretariat Jenderal;Pusdatin;Belanja Modal Fisik Lainnya;13310060000
+Sekretariat Jenderal;Total;Belanja Modal Fisik Lainnya;13310060000
+Inspektorat Jenderal;Set Itjen;Belanja Gaji dan Tunjangan PNS;15282626000
+Inspektorat Jenderal;Total;Belanja Gaji dan Tunjangan PNS;15282626000
+Inspektorat Jenderal;Set Itjen;Belanja Lembur;66432000
+Inspektorat Jenderal;Total;Belanja Lembur;66432000
+Inspektorat Jenderal;Set Itjen;Belanja Tunj. Khusus & Belanja Pegawai Transito;12119877000
+Inspektorat Jenderal;Total;Belanja Tunj. Khusus & Belanja Pegawai Transito;12119877000
+Inspektorat Jenderal;Set Itjen;Belanja Barang Operasional;1599180000
+Inspektorat Jenderal;Total;Belanja Barang Operasional;1599180000
+Inspektorat Jenderal;Inspektorat I;Belanja Barang Non Operasional;150970000
+Inspektorat Jenderal;Inspektorat II;Belanja Barang Non Operasional;159610000
+Inspektorat Jenderal;Inspektorat III;Belanja Barang Non Operasional;153130000
+Inspektorat Jenderal;Inspektorat IV;Belanja Barang Non Operasional;161050000
+Inspektorat Jenderal;Inspektorat V;Belanja Barang Non Operasional;162900000
+Inspektorat Jenderal;Set Itjen;Belanja Barang Non Operasional;2719451000
+Inspektorat Jenderal;Total;Belanja Barang Non Operasional;3507111000
+Inspektorat Jenderal;Set Itjen;Belanja Barang Persediaan;263760000
+Inspektorat Jenderal;Total;Belanja Barang Persediaan;263760000
+Inspektorat Jenderal;Inspektorat I;Belanja Jasa;118100000
+Inspektorat Jenderal;Inspektorat II;Belanja Jasa;118100000
+Inspektorat Jenderal;Inspektorat III;Belanja Jasa;118100000
+Inspektorat Jenderal;Inspektorat IV;Belanja Jasa;118100000
+Inspektorat Jenderal;Inspektorat V;Belanja Jasa;113600000
+Inspektorat Jenderal;Set Itjen;Belanja Jasa;756110000
+Inspektorat Jenderal;Total;Belanja Jasa;1342110000
+Inspektorat Jenderal;Set Itjen;Belanja Pemeliharaan;961160000
+Inspektorat Jenderal;Total;Belanja Pemeliharaan;961160000
+Inspektorat Jenderal;Inspektorat I;Belanja Perjalanan Dalam Negeri;6204178000
+Inspektorat Jenderal;Inspektorat II;Belanja Perjalanan Dalam Negeri;7139405000
+Inspektorat Jenderal;Inspektorat III;Belanja Perjalanan Dalam Negeri;6357510000
+Inspektorat Jenderal;Inspektorat IV;Belanja Perjalanan Dalam Negeri;6538872000
+Inspektorat Jenderal;Inspektorat V;Belanja Perjalanan Dalam Negeri;6520946000
+Inspektorat Jenderal;Set Itjen;Belanja Perjalanan Dalam Negeri;9688741000
+Inspektorat Jenderal;Total;Belanja Perjalanan Dalam Negeri;42449652000
+Inspektorat Jenderal;Set Itjen;Belanja Perjalanan Luar Negeri;50000000
+Inspektorat Jenderal;Total;Belanja Perjalanan Luar Negeri;50000000
+Inspektorat Jenderal;Set Itjen;Belanja Modal Peralatan dan Mesin;1213461000
+Inspektorat Jenderal;Total;Belanja Modal Peralatan dan Mesin;1213461000
+Ditjen Perikanan Tangkap;Setditjen;Belanja Gaji dan Tunjangan PNS;27162889000
+Ditjen Perikanan Tangkap;Total;Belanja Gaji dan Tunjangan PNS;27162889000
+Ditjen Perikanan Tangkap;Setditjen;Belanja Lembur;52030000
+Ditjen Perikanan Tangkap;Total;Belanja Lembur;52030000
+Ditjen Perikanan Tangkap;Setditjen;Belanja Tunj. Khusus & Belanja Pegawai Transito;19715622000
+Ditjen Perikanan Tangkap;Total;Belanja Tunj. Khusus & Belanja Pegawai Transito;19715622000
+Ditjen Perikanan Tangkap;COREMAP-CTI Project;Belanja Barang Operasional;825767000
+Ditjen Perikanan Tangkap;Setditjen;Belanja Barang Operasional;5254021000
+Ditjen Perikanan Tangkap;Direktorat Pelabuhan Perikanan;Belanja Barang Operasional;2131020000
+Ditjen Perikanan Tangkap;Direktorat Kapi;Belanja Barang Operasional;1658410000
+Ditjen Perikanan Tangkap;Direktorat Pengelolaan SDI;Belanja Barang Operasional;776325000
+Ditjen Perikanan Tangkap;Direktorat Perizinan Dan Kenelayanan;Belanja Barang Operasional;1539955000
+Ditjen Perikanan Tangkap;Direktorat Kenelayanan;Belanja Barang Operasional;179091000
+Ditjen Perikanan Tangkap;Total;Belanja Barang Operasional;12364589000
+Ditjen Perikanan Tangkap;COREMAP-CTI Project;Belanja Barang Non Operasional;11614818000
+Ditjen Perikanan Tangkap;Setditjen;Belanja Barang Non Operasional;7560224000
+Ditjen Perikanan Tangkap;Direktorat Pelabuhan Perikanan;Belanja Barang Non Operasional;6084580000
+Ditjen Perikanan Tangkap;Direktorat Kapi;Belanja Barang Non Operasional;19152977000
+Ditjen Perikanan Tangkap;Direktorat Pengelolaan SDI;Belanja Barang Non Operasional;8859460000
+Ditjen Perikanan Tangkap;Direktorat Perizinan Dan Kenelayanan;Belanja Barang Non Operasional;10754417000
+Ditjen Perikanan Tangkap;Direktorat Kenelayanan;Belanja Barang Non Operasional;116781000
+Ditjen Perikanan Tangkap;Total;Belanja Barang Non Operasional;64143257000
+Ditjen Perikanan Tangkap;COREMAP-CTI Project;Belanja Barang Persediaan;102000000
+Ditjen Perikanan Tangkap;Setditjen;Belanja Barang Persediaan;1680551000
+Ditjen Perikanan Tangkap;Direktorat Pelabuhan Perikanan;Belanja Barang Persediaan;60000000
+Ditjen Perikanan Tangkap;Direktorat Kapi;Belanja Barang Persediaan;199713000
+Ditjen Perikanan Tangkap;Direktorat Pengelolaan SDI;Belanja Barang Persediaan;87600000
+Ditjen Perikanan Tangkap;Direktorat Perizinan Dan Kenelayanan;Belanja Barang Persediaan;1444453000
+Ditjen Perikanan Tangkap;Direktorat Kenelayanan;Belanja Barang Persediaan;28027000
+Ditjen Perikanan Tangkap;Total;Belanja Barang Persediaan;3602344000
+Ditjen Perikanan Tangkap;COREMAP-CTI Project;Belanja Jasa;26076248000
+Ditjen Perikanan Tangkap;Setditjen;Belanja Jasa;15141798000
+Ditjen Perikanan Tangkap;Direktorat Pelabuhan Perikanan;Belanja Jasa;5247060000
+Ditjen Perikanan Tangkap;Direktorat Kapi;Belanja Jasa;2259100000
+Ditjen Perikanan Tangkap;Direktorat Pengelolaan SDI;Belanja Jasa;9295445000
+Ditjen Perikanan Tangkap;Direktorat Perizinan Dan Kenelayanan;Belanja Jasa;12181397000
+Ditjen Perikanan Tangkap;Direktorat Kenelayanan;Belanja Jasa;21900000
+Ditjen Perikanan Tangkap;Total;Belanja Jasa;70222948000
+Ditjen Perikanan Tangkap;COREMAP-CTI Project;Belanja Pemeliharaan;29000000
+Ditjen Perikanan Tangkap;Setditjen;Belanja Pemeliharaan;8732222000
+Ditjen Perikanan Tangkap;Direktorat Pelabuhan Perikanan;Belanja Pemeliharaan;1006620000
+Ditjen Perikanan Tangkap;Direktorat Kapi;Belanja Pemeliharaan;339000000
+Ditjen Perikanan Tangkap;Direktorat Pengelolaan SDI;Belanja Pemeliharaan;336120000
+Ditjen Perikanan Tangkap;Direktorat Perizinan Dan Kenelayanan;Belanja Pemeliharaan;589444000
+Ditjen Perikanan Tangkap;Direktorat Kenelayanan;Belanja Pemeliharaan;45998000
+Ditjen Perikanan Tangkap;Total;Belanja Pemeliharaan;11078404000
+Ditjen Perikanan Tangkap;COREMAP-CTI Project;Belanja Perjalanan Dalam Negeri;1334000000
+Ditjen Perikanan Tangkap;Setditjen;Belanja Perjalanan Dalam Negeri;26177136000
+Ditjen Perikanan Tangkap;Direktorat Pelabuhan Perikanan;Belanja Perjalanan Dalam Negeri;18994835000
+Ditjen Perikanan Tangkap;Direktorat Kapi;Belanja Perjalanan Dalam Negeri;40233874000
+Ditjen Perikanan Tangkap;Direktorat Pengelolaan SDI;Belanja Perjalanan Dalam Negeri;13887232000
+Ditjen Perikanan Tangkap;Direktorat Perizinan Dan Kenelayanan;Belanja Perjalanan Dalam Negeri;24696119000
+Ditjen Perikanan Tangkap;Direktorat Kenelayanan;Belanja Perjalanan Dalam Negeri;487052000
+Ditjen Perikanan Tangkap;Total;Belanja Perjalanan Dalam Negeri;125810248000
+Ditjen Perikanan Tangkap;COREMAP-CTI Project;Belanja Perjalanan Luar Negeri;1010000000
+Ditjen Perikanan Tangkap;Setditjen;Belanja Perjalanan Luar Negeri;914000000
+Ditjen Perikanan Tangkap;Direktorat Pelabuhan Perikanan;Belanja Perjalanan Luar Negeri;416976000
+Ditjen Perikanan Tangkap;Direktorat Kapi;Belanja Perjalanan Luar Negeri;40000000
+Ditjen Perikanan Tangkap;Total;Belanja Perjalanan Luar Negeri;2380976000
+Ditjen Perikanan Tangkap;COREMAP-CTI Project;Belanja Barang untuk diserahkan kepada masyarakat/Pemda;12252167000
+Ditjen Perikanan Tangkap;Setditjen;Belanja Barang untuk diserahkan kepada masyarakat/Pemda;275000000
+Ditjen Perikanan Tangkap;Direktorat Pelabuhan Perikanan;Belanja Barang untuk diserahkan kepada masyarakat/Pemda;114163164000
+Ditjen Perikanan Tangkap;Direktorat Kapi;Belanja Barang untuk diserahkan kepada masyarakat/Pemda;486173314000
+Ditjen Perikanan Tangkap;Direktorat Pengelolaan SDI;Belanja Barang untuk diserahkan kepada masyarakat/Pemda;92650101000
+Ditjen Perikanan Tangkap;Direktorat Perizinan Dan Kenelayanan;Belanja Barang untuk diserahkan kepada masyarakat/Pemda;62508656000
+Ditjen Perikanan Tangkap;Total;Belanja Barang untuk diserahkan kepada masyarakat/Pemda;768022402000
+Ditjen Perikanan Tangkap;COREMAP-CTI Project;Belanja Barang Lainnya untuk diserahkan kepada masyarakat/Pemda;0
+Ditjen Perikanan Tangkap;Direktorat Kapi;Belanja Barang Lainnya untuk diserahkan kepada masyarakat/Pemda;4340300000
+Ditjen Perikanan Tangkap;Direktorat Perizinan Dan Kenelayanan;Belanja Barang Lainnya untuk diserahkan kepada masyarakat/Pemda;203181000000
+Ditjen Perikanan Tangkap;Total;Belanja Barang Lainnya untuk diserahkan kepada masyarakat/Pemda;207521300000
+Ditjen Perikanan Tangkap;COREMAP-CTI Project;Belanja Modal Peralatan dan Mesin;86000000
+Ditjen Perikanan Tangkap;Setditjen;Belanja Modal Peralatan dan Mesin;1133500000
+Ditjen Perikanan Tangkap;Direktorat Pelabuhan Perikanan;Belanja Modal Peralatan dan Mesin;853309000
+Ditjen Perikanan Tangkap;Direktorat Kapi;Belanja Modal Peralatan dan Mesin;89061968000
+Ditjen Perikanan Tangkap;Direktorat Pengelolaan SDI;Belanja Modal Peralatan dan Mesin;90000000
+Ditjen Perikanan Tangkap;Direktorat Perizinan Dan Kenelayanan;Belanja Modal Peralatan dan Mesin;1018800000
+Ditjen Perikanan Tangkap;Total;Belanja Modal Peralatan dan Mesin;92243577000
+Ditjen Perikanan Tangkap;Direktorat Pelabuhan Perikanan;Belanja Modal Gedung dan Bangunan;27560000000
+Ditjen Perikanan Tangkap;Total;Belanja Modal Gedung dan Bangunan;27560000000
+Ditjen Perikanan Tangkap;Direktorat Pelabuhan Perikanan;Belanja Modal Fisik Lainnya;70218675000
+Ditjen Perikanan Tangkap;Direktorat Perizinan Dan Kenelayanan;Belanja Modal Fisik Lainnya;4050000000
+Ditjen Perikanan Tangkap;Total;Belanja Modal Fisik Lainnya;74268675000
+Ditjen Perikanan Budidaya;Setditjen Perikanan Budidaya;Belanja Gaji dan Tunjangan PNS;33156321000
+Ditjen Perikanan Budidaya;Total;Belanja Gaji dan Tunjangan PNS;33156321000
+Ditjen Perikanan Budidaya;Setditjen Perikanan Budidaya;Belanja Tunj. Khusus & Belanja Pegawai Transito;18065432000
+Ditjen Perikanan Budidaya;Total;Belanja Tunj. Khusus & Belanja Pegawai Transito;18065432000
+Ditjen Perikanan Budidaya;Direktorat Kawasan Dan Kesehatan Ikan;Belanja Barang Operasional;351120000
+Ditjen Perikanan Budidaya;Direktorat Perbenihan;Belanja Barang Operasional;354660000
+Ditjen Perikanan Budidaya;Direktorat Produksi Dan Usaha;Belanja Barang Operasional;336300000
+Ditjen Perikanan Budidaya;Direktorat Kesehatan Ikan Dan Lingkungan;Belanja Barang Operasional;81181000
+Ditjen Perikanan Budidaya;Direktorat Pakan Dan Obat Ikan;Belanja Barang Operasional;598500000
+Ditjen Perikanan Budidaya;Setditjen Perikanan Budidaya;Belanja Barang Operasional;2993900000
+Ditjen Perikanan Budidaya;Total;Belanja Barang Operasional;4715661000
+Ditjen Perikanan Budidaya;Direktorat Kawasan Dan Kesehatan Ikan;Belanja Barang Non Operasional;2352698000
+Ditjen Perikanan Budidaya;Direktorat Perbenihan;Belanja Barang Non Operasional;5989636000
+Ditjen Perikanan Budidaya;Direktorat Produksi Dan Usaha;Belanja Barang Non Operasional;3256347000
+Ditjen Perikanan Budidaya;Direktorat Kesehatan Ikan Dan Lingkungan;Belanja Barang Non Operasional;107900000
+Ditjen Perikanan Budidaya;Direktorat Pakan Dan Obat Ikan;Belanja Barang Non Operasional;11145326000
+Ditjen Perikanan Budidaya;Setditjen Perikanan Budidaya;Belanja Barang Non Operasional;2679379000
+Ditjen Perikanan Budidaya;Total;Belanja Barang Non Operasional;25531286000
+Ditjen Perikanan Budidaya;Direktorat Kawasan Dan Kesehatan Ikan;Belanja Barang Persediaan;188400000
+Ditjen Perikanan Budidaya;Direktorat Perbenihan;Belanja Barang Persediaan;173184000
+Ditjen Perikanan Budidaya;Direktorat Produksi Dan Usaha;Belanja Barang Persediaan;144000000
+Ditjen Perikanan Budidaya;Direktorat Kesehatan Ikan Dan Lingkungan;Belanja Barang Persediaan;20000000
+Ditjen Perikanan Budidaya;Direktorat Pakan Dan Obat Ikan;Belanja Barang Persediaan;186000000
+Ditjen Perikanan Budidaya;Setditjen Perikanan Budidaya;Belanja Barang Persediaan;480000000
+Ditjen Perikanan Budidaya;Total;Belanja Barang Persediaan;1191584000
+Ditjen Perikanan Budidaya;Direktorat Kawasan Dan Kesehatan Ikan;Belanja Jasa;18723947000
+Ditjen Perikanan Budidaya;Direktorat Perbenihan;Belanja Jasa;3290400000
+Ditjen Perikanan Budidaya;Direktorat Produksi Dan Usaha;Belanja Jasa;2629405000
+Ditjen Perikanan Budidaya;Direktorat Kesehatan Ikan Dan Lingkungan;Belanja Jasa;12600000
+Ditjen Perikanan Budidaya;Direktorat Pakan Dan Obat Ikan;Belanja Jasa;3817761000
+Ditjen Perikanan Budidaya;Setditjen Perikanan Budidaya;Belanja Jasa;2384632000
+Ditjen Perikanan Budidaya;Total;Belanja Jasa;30858745000
+Ditjen Perikanan Budidaya;Direktorat Produksi Dan Usaha;Belanja Pemeliharaan;1317605000
+Ditjen Perikanan Budidaya;Setditjen Perikanan Budidaya;Belanja Pemeliharaan;3280010000
+Ditjen Perikanan Budidaya;Total;Belanja Pemeliharaan;4597615000
+Ditjen Perikanan Budidaya;Direktorat Kawasan Dan Kesehatan Ikan;Belanja Perjalanan Dalam Negeri;7897278000
+Ditjen Perikanan Budidaya;Direktorat Perbenihan;Belanja Perjalanan Dalam Negeri;6196380000
+Ditjen Perikanan Budidaya;Direktorat Produksi Dan Usaha;Belanja Perjalanan Dalam Negeri;8687470000
+Ditjen Perikanan Budidaya;Direktorat Kesehatan Ikan Dan Lingkungan;Belanja Perjalanan Dalam Negeri;106494000
+Ditjen Perikanan Budidaya;Direktorat Pakan Dan Obat Ikan;Belanja Perjalanan Dalam Negeri;4264751000
+Ditjen Perikanan Budidaya;Setditjen Perikanan Budidaya;Belanja Perjalanan Dalam Negeri;7885274000
+Ditjen Perikanan Budidaya;Total;Belanja Perjalanan Dalam Negeri;35037647000
+Ditjen Perikanan Budidaya;Setditjen Perikanan Budidaya;Belanja Perjalanan Luar Negeri;1000000000
+Ditjen Perikanan Budidaya;Total;Belanja Perjalanan Luar Negeri;1000000000
+Ditjen Perikanan Budidaya;Direktorat Kawasan Dan Kesehatan Ikan;Belanja Barang untuk diserahkan kepada masyarakat/Pemda;85055860000
+Ditjen Perikanan Budidaya;Direktorat Perbenihan;Belanja Barang untuk diserahkan kepada masyarakat/Pemda;36955847000
+Ditjen Perikanan Budidaya;Direktorat Produksi Dan Usaha;Belanja Barang untuk diserahkan kepada masyarakat/Pemda;152571437000
+Ditjen Perikanan Budidaya;Direktorat Pakan Dan Obat Ikan;Belanja Barang untuk diserahkan kepada masyarakat/Pemda;74071772000
+Ditjen Perikanan Budidaya;Total;Belanja Barang untuk diserahkan kepada masyarakat/Pemda;348654916000
+Ditjen Perikanan Budidaya;Direktorat Kawasan Dan Kesehatan Ikan;Belanja Barang Lainnya untuk diserahkan kepada masyarakat/Pemda;17739062000
+Ditjen Perikanan Budidaya;Direktorat Perbenihan;Belanja Barang Lainnya untuk diserahkan kepada masyarakat/Pemda;7600000000
+Ditjen Perikanan Budidaya;Direktorat Produksi Dan Usaha;Belanja Barang Lainnya untuk diserahkan kepada masyarakat/Pemda;7258268000
+Ditjen Perikanan Budidaya;Total;Belanja Barang Lainnya untuk diserahkan kepada masyarakat/Pemda;32597330000
+Ditjen Perikanan Budidaya;Direktorat Kawasan Dan Kesehatan Ikan;Belanja Modal Peralatan dan Mesin;12135960000
+Ditjen Perikanan Budidaya;Direktorat Perbenihan;Belanja Modal Peralatan dan Mesin;1537900000
+Ditjen Perikanan Budidaya;Direktorat Produksi Dan Usaha;Belanja Modal Peralatan dan Mesin;253705000
+Ditjen Perikanan Budidaya;Direktorat Pakan Dan Obat Ikan;Belanja Modal Peralatan dan Mesin;52707170000
+Ditjen Perikanan Budidaya;Setditjen Perikanan Budidaya;Belanja Modal Peralatan dan Mesin;1055211000
+Ditjen Perikanan Budidaya;Total;Belanja Modal Peralatan dan Mesin;67689946000
+Ditjen Perikanan Budidaya;Direktorat Kawasan Dan Kesehatan Ikan;Belanja Modal Gedung dan Bangunan;3150000000
+Ditjen Perikanan Budidaya;Direktorat Perbenihan;Belanja Modal Gedung dan Bangunan;6673330000
+Ditjen Perikanan Budidaya;Direktorat Pakan Dan Obat Ikan;Belanja Modal Gedung dan Bangunan;2450000000
+Ditjen Perikanan Budidaya;Total;Belanja Modal Gedung dan Bangunan;12273330000
+Ditjen Perikanan Budidaya;Direktorat Kawasan Dan Kesehatan Ikan;Belanja Modal Fisik Lainnya;16277534000
+Ditjen Perikanan Budidaya;Direktorat Perbenihan;Belanja Modal Fisik Lainnya;91256200000
+Ditjen Perikanan Budidaya;Setditjen Perikanan Budidaya;Belanja Modal Fisik Lainnya;2253366000
+Ditjen Perikanan Budidaya;Total;Belanja Modal Fisik Lainnya;109787100000
+Ditjen PSDKP;Setditjen PSDKP;Belanja Gaji dan Tunjangan PNS;34214231000
+Ditjen PSDKP;Total;Belanja Gaji dan Tunjangan PNS;34214231000
+Ditjen PSDKP;Setditjen PSDKP;Belanja Lembur;866563000
+Ditjen PSDKP;Total;Belanja Lembur;866563000
+Ditjen PSDKP;Setditjen PSDKP;Belanja Tunj. Khusus & Belanja Pegawai Transito;26214645000
+Ditjen PSDKP;Total;Belanja Tunj. Khusus & Belanja Pegawai Transito;26214645000
+Ditjen PSDKP;Setditjen PSDKP;Belanja Barang Operasional;1652781000
+Ditjen PSDKP;Direktorat Pengawasan Pengelolaan Sumber Daya Perikanan;Belanja Barang Operasional;487846000
+Ditjen PSDKP;Direktorat Pengawasan Pengelolaan Sumber Daya Kelautan;Belanja Barang Operasional;421540000
+Ditjen PSDKP;Direktorat Pemantauan Dan Operasi Armada;Belanja Barang Operasional;6251272000
+Ditjen PSDKP;Direktorat Pemantauan Dan Peningkatan Infrastruktur;Belanja Barang Operasional;151784000
+Ditjen PSDKP;Direktorat Penanganan Pelanggaran;Belanja Barang Operasional;1899953000
+Ditjen PSDKP;Total;Belanja Barang Operasional;10865176000
+Ditjen PSDKP;Setditjen PSDKP;Belanja Barang Non Operasional;3408644000
+Ditjen PSDKP;Direktorat Pengawasan Pengelolaan Sumber Daya Perikanan;Belanja Barang Non Operasional;342722000
+Ditjen PSDKP;Direktorat Pengawasan Pengelolaan Sumber Daya Kelautan;Belanja Barang Non Operasional;292676000
+Ditjen PSDKP;Direktorat Pemantauan Dan Operasi Armada;Belanja Barang Non Operasional;30101810000
+Ditjen PSDKP;Direktorat Pemantauan Dan Peningkatan Infrastruktur;Belanja Barang Non Operasional;97127000
+Ditjen PSDKP;Direktorat Penanganan Pelanggaran;Belanja Barang Non Operasional;40502144000
+Ditjen PSDKP;Total;Belanja Barang Non Operasional;74745123000
+Ditjen PSDKP;Setditjen PSDKP;Belanja Barang Persediaan;839490000
+Ditjen PSDKP;Direktorat Pengawasan Pengelolaan Sumber Daya Perikanan;Belanja Barang Persediaan;265000000
+Ditjen PSDKP;Direktorat Pengawasan Pengelolaan Sumber Daya Kelautan;Belanja Barang Persediaan;149285000
+Ditjen PSDKP;Direktorat Pemantauan Dan Operasi Armada;Belanja Barang Persediaan;252831190000
+Ditjen PSDKP;Direktorat Pemantauan Dan Peningkatan Infrastruktur;Belanja Barang Persediaan;49165000
+Ditjen PSDKP;Direktorat Penanganan Pelanggaran;Belanja Barang Persediaan;2290017000
+Ditjen PSDKP;Total;Belanja Barang Persediaan;256424147000
+Ditjen PSDKP;Setditjen PSDKP;Belanja Jasa;1225075000
+Ditjen PSDKP;Direktorat Pengawasan Pengelolaan Sumber Daya Perikanan;Belanja Jasa;267300000
+Ditjen PSDKP;Direktorat Pengawasan Pengelolaan Sumber Daya Kelautan;Belanja Jasa;211400000
+Ditjen PSDKP;Direktorat Pemantauan Dan Operasi Armada;Belanja Jasa;43758320000
+Ditjen PSDKP;Direktorat Pemantauan Dan Peningkatan Infrastruktur;Belanja Jasa;30651000
+Ditjen PSDKP;Direktorat Penanganan Pelanggaran;Belanja Jasa;5769674000
+Ditjen PSDKP;Total;Belanja Jasa;51262420000
+Ditjen PSDKP;Setditjen PSDKP;Belanja Pemeliharaan;723622000
+Ditjen PSDKP;Direktorat Pengawasan Pengelolaan Sumber Daya Perikanan;Belanja Pemeliharaan;321740000
+Ditjen PSDKP;Direktorat Pengawasan Pengelolaan Sumber Daya Kelautan;Belanja Pemeliharaan;259420000
+Ditjen PSDKP;Direktorat Pemantauan Dan Operasi Armada;Belanja Pemeliharaan;12004242000
+Ditjen PSDKP;Direktorat Pemantauan Dan Peningkatan Infrastruktur;Belanja Pemeliharaan;73688000
+Ditjen PSDKP;Direktorat Penanganan Pelanggaran;Belanja Pemeliharaan;616290000
+Ditjen PSDKP;Total;Belanja Pemeliharaan;13999002000
+Ditjen PSDKP;Setditjen PSDKP;Belanja Perjalanan Dalam Negeri;6259508000
+Ditjen PSDKP;Direktorat Pengawasan Pengelolaan Sumber Daya Perikanan;Belanja Perjalanan Dalam Negeri;1650000000
+Ditjen PSDKP;Direktorat Pengawasan Pengelolaan Sumber Daya Kelautan;Belanja Perjalanan Dalam Negeri;1447300000
+Ditjen PSDKP;Direktorat Pemantauan Dan Operasi Armada;Belanja Perjalanan Dalam Negeri;6769115000
+Ditjen PSDKP;Direktorat Pemantauan Dan Peningkatan Infrastruktur;Belanja Perjalanan Dalam Negeri;127230000
+Ditjen PSDKP;Direktorat Penanganan Pelanggaran;Belanja Perjalanan Dalam Negeri;15880790000
+Ditjen PSDKP;Total;Belanja Perjalanan Dalam Negeri;32133943000
+Ditjen PSDKP;Setditjen PSDKP;Belanja Perjalanan Luar Negeri;890000000
+Ditjen PSDKP;Direktorat Penanganan Pelanggaran;Belanja Perjalanan Luar Negeri;1920000000
+Ditjen PSDKP;Total;Belanja Perjalanan Luar Negeri;2810000000
+Ditjen PSDKP;Setditjen PSDKP;Belanja Modal Peralatan dan Mesin;309000000
+Ditjen PSDKP;Direktorat Pemantauan Dan Operasi Armada;Belanja Modal Peralatan dan Mesin;153907734000
+Ditjen PSDKP;Direktorat Pemantauan Dan Peningkatan Infrastruktur;Belanja Modal Peralatan dan Mesin;3980000
+Ditjen PSDKP;Direktorat Penanganan Pelanggaran;Belanja Modal Peralatan dan Mesin;77000000
+Ditjen PSDKP;Total;Belanja Modal Peralatan dan Mesin;154297714000
+Ditjen PSDKP;Direktorat Pemantauan Dan Peningkatan Infrastruktur;Belanja Modal Gedung dan Bangunan;20600000
+Ditjen PSDKP;Total;Belanja Modal Gedung dan Bangunan;20600000
+Ditjen PSDKP;Direktorat Penanganan Pelanggaran;Belanja Modal Fisik Lainnya;49500000
+Ditjen PSDKP;Total;Belanja Modal Fisik Lainnya;49500000
+Ditjen PDS;Setditjen PDS;Belanja Gaji dan Tunjangan PNS;23076407000
+Ditjen PDS;Total;Belanja Gaji dan Tunjangan PNS;23076407000
+Ditjen PDS;Setditjen PDS;Belanja Lembur;800514000
+Ditjen PDS;Total;Belanja Lembur;800514000
+Ditjen PDS;Setditjen PDS;Belanja Tunj. Khusus & Belanja Pegawai Transito;17544444000
+Ditjen PDS;Total;Belanja Tunj. Khusus & Belanja Pegawai Transito;17544444000
+Ditjen PDS;Direktorat Pengolahan Dan Bina Mutu;Belanja Barang Operasional;1005008000
+Ditjen PDS;Direktorat Usaha Dan Investasi;Belanja Barang Operasional;985650000
+Ditjen PDS;Direktorat Pemasaran;Belanja Barang Operasional;855550000
+Ditjen PDS;Direktorat Bina Mutu Dan DIVersifikasi Produk Kelautan;Belanja Barang Operasional;72380000
+Ditjen PDS;Direktorat Logistik;Belanja Barang Operasional;1236343000
+Ditjen PDS;Setditjen PDS;Belanja Barang Operasional;508700000
+Ditjen PDS;Total;Belanja Barang Operasional;4663631000
+Ditjen PDS;Direktorat Pengolahan Dan Bina Mutu;Belanja Barang Non Operasional;2768790000
+Ditjen PDS;Direktorat Usaha Dan Investasi;Belanja Barang Non Operasional;1469649000
+Ditjen PDS;Direktorat Pemasaran;Belanja Barang Non Operasional;3522715000
+Ditjen PDS;Direktorat Bina Mutu Dan DIVersifikasi Produk Kelautan;Belanja Barang Non Operasional;143593000
+Ditjen PDS;Direktorat Logistik;Belanja Barang Non Operasional;3277512000
+Ditjen PDS;Setditjen PDS;Belanja Barang Non Operasional;7728053000
+Ditjen PDS;Total;Belanja Barang Non Operasional;18910312000
+Ditjen PDS;Direktorat Pengolahan Dan Bina Mutu;Belanja Barang Persediaan;99675000
+Ditjen PDS;Direktorat Usaha Dan Investasi;Belanja Barang Persediaan;144890000
+Ditjen PDS;Direktorat Pemasaran;Belanja Barang Persediaan;77520000
+Ditjen PDS;Direktorat Bina Mutu Dan DIVersifikasi Produk Kelautan;Belanja Barang Persediaan;65354000
+Ditjen PDS;Direktorat Logistik;Belanja Barang Persediaan;21000000
+Ditjen PDS;Setditjen PDS;Belanja Barang Persediaan;260400000
+Ditjen PDS;Total;Belanja Barang Persediaan;668839000
+Ditjen PDS;Direktorat Pengolahan Dan Bina Mutu;Belanja Jasa;12404488000
+Ditjen PDS;Direktorat Usaha Dan Investasi;Belanja Jasa;5658440000
+Ditjen PDS;Direktorat Pemasaran;Belanja Jasa;32302894000
+Ditjen PDS;Direktorat Logistik;Belanja Jasa;15776074000
+Ditjen PDS;Setditjen PDS;Belanja Jasa;2489246000
+Ditjen PDS;Total;Belanja Jasa;68631142000
+Ditjen PDS;Direktorat Pengolahan Dan Bina Mutu;Belanja Pemeliharaan;526690000
+Ditjen PDS;Direktorat Usaha Dan Investasi;Belanja Pemeliharaan;404670000
+Ditjen PDS;Direktorat Pemasaran;Belanja Pemeliharaan;394000000
+Ditjen PDS;Direktorat Bina Mutu Dan DIVersifikasi Produk Kelautan;Belanja Pemeliharaan;54140000
+Ditjen PDS;Direktorat Logistik;Belanja Pemeliharaan;692722000
+Ditjen PDS;Setditjen PDS;Belanja Pemeliharaan;1315749000
+Ditjen PDS;Total;Belanja Pemeliharaan;3387971000
+Ditjen PDS;Direktorat Pengolahan Dan Bina Mutu;Belanja Perjalanan Dalam Negeri;3880677000
+Ditjen PDS;Direktorat Usaha Dan Investasi;Belanja Perjalanan Dalam Negeri;3239034000
+Ditjen PDS;Direktorat Pemasaran;Belanja Perjalanan Dalam Negeri;5249143000
+Ditjen PDS;Direktorat Bina Mutu Dan DIVersifikasi Produk Kelautan;Belanja Perjalanan Dalam Negeri;95305000
+Ditjen PDS;Direktorat Logistik;Belanja Perjalanan Dalam Negeri;4735376000
+Ditjen PDS;Setditjen PDS;Belanja Perjalanan Dalam Negeri;8322132000
+Ditjen PDS;Total;Belanja Perjalanan Dalam Negeri;25521667000
+Ditjen PDS;Direktorat Pemasaran;Belanja Perjalanan Luar Negeri;600400000
+Ditjen PDS;Setditjen PDS;Belanja Perjalanan Luar Negeri;1060000000
+Ditjen PDS;Total;Belanja Perjalanan Luar Negeri;1660400000
+Ditjen PDS;Direktorat Pengolahan Dan Bina Mutu;Belanja Barang untuk diserahkan kepada masyarakat/Pemda;314899068000
+Ditjen PDS;Direktorat Usaha Dan Investasi;Belanja Barang untuk diserahkan kepada masyarakat/Pemda;49026056000
+Ditjen PDS;Direktorat Pemasaran;Belanja Barang untuk diserahkan kepada masyarakat/Pemda;219321640000
+Ditjen PDS;Direktorat Logistik;Belanja Barang untuk diserahkan kepada masyarakat/Pemda;129898928000
+Ditjen PDS;Total;Belanja Barang untuk diserahkan kepada masyarakat/Pemda;713145692000
+Ditjen PDS;Direktorat Usaha Dan Investasi;Belanja Barang Lainnya untuk diserahkan kepada masyarakat/Pemda;517500000
+Ditjen PDS;Direktorat Logistik;Belanja Barang Lainnya untuk diserahkan kepada masyarakat/Pemda;10000000
+Ditjen PDS;Total;Belanja Barang Lainnya untuk diserahkan kepada masyarakat/Pemda;527500000
+Ditjen PDS;Direktorat Logistik;Belanja Modal Tanah;2000000000
+Ditjen PDS;Total;Belanja Modal Tanah;2000000000
+Ditjen PDS;Direktorat Pengolahan Dan Bina Mutu;Belanja Modal Peralatan dan Mesin;81883000
+Ditjen PDS;Direktorat Usaha Dan Investasi;Belanja Modal Peralatan dan Mesin;1096000000
+Ditjen PDS;Direktorat Pemasaran;Belanja Modal Peralatan dan Mesin;217500000
+Ditjen PDS;Direktorat Logistik;Belanja Modal Peralatan dan Mesin;5507241000
+Ditjen PDS;Setditjen PDS;Belanja Modal Peralatan dan Mesin;788101000
+Ditjen PDS;Total;Belanja Modal Peralatan dan Mesin;7690725000
+Ditjen PDS;Direktorat Pemasaran;Belanja Modal Gedung dan Bangunan;71427371000
+Ditjen PDS;Direktorat Logistik;Belanja Modal Gedung dan Bangunan;58893804000
+Ditjen PDS;Total;Belanja Modal Gedung dan Bangunan;130321175000
+Ditjen Pengelolaan Ruang Laut;Setditjen Pengelolaan Ruang Laut;Belanja Gaji dan Tunjangan PNS;20687545000
+Ditjen Pengelolaan Ruang Laut;Total;Belanja Gaji dan Tunjangan PNS;20687545000
+Ditjen Pengelolaan Ruang Laut;Setditjen Pengelolaan Ruang Laut;Belanja Gaji dan Tunjangan Pegawai Non PNS;77000000
+Ditjen Pengelolaan Ruang Laut;Total;Belanja Gaji dan Tunjangan Pegawai Non PNS;77000000
+Ditjen Pengelolaan Ruang Laut;Setditjen Pengelolaan Ruang Laut;Belanja Tunj. Khusus & Belanja Pegawai Transito;24730277000
+Ditjen Pengelolaan Ruang Laut;Total;Belanja Tunj. Khusus & Belanja Pegawai Transito;24730277000
+Ditjen Pengelolaan Ruang Laut;Pengelolaan Dan Rehabilitasi Terumbu Karang - CTI;Belanja Barang Operasional;417600000
+Ditjen Pengelolaan Ruang Laut;Pembangunan Masyarakat Pesisir (CCD-IFAD);Belanja Barang Operasional;378010000
+Ditjen Pengelolaan Ruang Laut;Direktorat Perencanaan Ruang Laut;Belanja Barang Operasional;381960000
+Ditjen Pengelolaan Ruang Laut;Direktorat Konservasi Dan Keanekaragaman Hayati Laut;Belanja Barang Operasional;403320000
+Ditjen Pengelolaan Ruang Laut;Direktorat Pendayagunaan Pesisir Dan Pulau-Pulau Kecil;Belanja Barang Operasional;914660000
+Ditjen Pengelolaan Ruang Laut;Direktorat Pendayagunaan Pulau-Pulau Kecil;Belanja Barang Operasional;117070000
+Ditjen Pengelolaan Ruang Laut;Direktorat Jasa Kelautan;Belanja Barang Operasional;1174650000
+Ditjen Pengelolaan Ruang Laut;Setditjen Pengelolaan Ruang Laut;Belanja Barang Operasional;1831610000
+Ditjen Pengelolaan Ruang Laut;Total;Belanja Barang Operasional;5618880000
+Ditjen Pengelolaan Ruang Laut;Pengelolaan Dan Rehabilitasi Terumbu Karang - CTI;Belanja Barang Non Operasional;4010830000
+Ditjen Pengelolaan Ruang Laut;Pembangunan Masyarakat Pesisir (CCD-IFAD);Belanja Barang Non Operasional;7102134000
+Ditjen Pengelolaan Ruang Laut;Direktorat Perencanaan Ruang Laut;Belanja Barang Non Operasional;1345608000
+Ditjen Pengelolaan Ruang Laut;Direktorat Konservasi Dan Keanekaragaman Hayati Laut;Belanja Barang Non Operasional;8798707000
+Ditjen Pengelolaan Ruang Laut;Direktorat Pendayagunaan Pesisir Dan Pulau-Pulau Kecil;Belanja Barang Non Operasional;26247569000
+Ditjen Pengelolaan Ruang Laut;Direktorat Pendayagunaan Pulau-Pulau Kecil;Belanja Barang Non Operasional;179338000
+Ditjen Pengelolaan Ruang Laut;Direktorat Jasa Kelautan;Belanja Barang Non Operasional;4111734000
+Ditjen Pengelolaan Ruang Laut;Setditjen Pengelolaan Ruang Laut;Belanja Barang Non Operasional;5426093000
+Ditjen Pengelolaan Ruang Laut;Total;Belanja Barang Non Operasional;57222013000
+Ditjen Pengelolaan Ruang Laut;Pengelolaan Dan Rehabilitasi Terumbu Karang - CTI;Belanja Barang Persediaan;72000000
+Ditjen Pengelolaan Ruang Laut;Pembangunan Masyarakat Pesisir (CCD-IFAD);Belanja Barang Persediaan;60000000
+Ditjen Pengelolaan Ruang Laut;Direktorat Perencanaan Ruang Laut;Belanja Barang Persediaan;33000000
+Ditjen Pengelolaan Ruang Laut;Direktorat Konservasi Dan Keanekaragaman Hayati Laut;Belanja Barang Persediaan;39450000
+Ditjen Pengelolaan Ruang Laut;Direktorat Pendayagunaan Pesisir Dan Pulau-Pulau Kecil;Belanja Barang Persediaan;298980000
+Ditjen Pengelolaan Ruang Laut;Direktorat Pendayagunaan Pulau-Pulau Kecil;Belanja Barang Persediaan;27400000
+Ditjen Pengelolaan Ruang Laut;Direktorat Jasa Kelautan;Belanja Barang Persediaan;276000000
+Ditjen Pengelolaan Ruang Laut;Setditjen Pengelolaan Ruang Laut;Belanja Barang Persediaan;138000000
+Ditjen Pengelolaan Ruang Laut;Total;Belanja Barang Persediaan;944830000
+Ditjen Pengelolaan Ruang Laut;Pengelolaan Dan Rehabilitasi Terumbu Karang - CTI;Belanja Jasa;24431620000
+Ditjen Pengelolaan Ruang Laut;Pembangunan Masyarakat Pesisir (CCD-IFAD);Belanja Jasa;74425662000
+Ditjen Pengelolaan Ruang Laut;Direktorat Perencanaan Ruang Laut;Belanja Jasa;2687435000
+Ditjen Pengelolaan Ruang Laut;Direktorat Konservasi Dan Keanekaragaman Hayati Laut;Belanja Jasa;20477748000
+Ditjen Pengelolaan Ruang Laut;Direktorat Pendayagunaan Pesisir Dan Pulau-Pulau Kecil;Belanja Jasa;14178287000
+Ditjen Pengelolaan Ruang Laut;Direktorat Pendayagunaan Pulau-Pulau Kecil;Belanja Jasa;306640000
+Ditjen Pengelolaan Ruang Laut;Direktorat Jasa Kelautan;Belanja Jasa;6133564000
+Ditjen Pengelolaan Ruang Laut;Setditjen Pengelolaan Ruang Laut;Belanja Jasa;2820990000
+Ditjen Pengelolaan Ruang Laut;Total;Belanja Jasa;145461946000
+Ditjen Pengelolaan Ruang Laut;Pembangunan Masyarakat Pesisir (CCD-IFAD);Belanja Pemeliharaan;42000000
+Ditjen Pengelolaan Ruang Laut;Direktorat Perencanaan Ruang Laut;Belanja Pemeliharaan;221540000
+Ditjen Pengelolaan Ruang Laut;Direktorat Konservasi Dan Keanekaragaman Hayati Laut;Belanja Pemeliharaan;413800000
+Ditjen Pengelolaan Ruang Laut;Direktorat Pendayagunaan Pesisir Dan Pulau-Pulau Kecil;Belanja Pemeliharaan;568920000
+Ditjen Pengelolaan Ruang Laut;Direktorat Pendayagunaan Pulau-Pulau Kecil;Belanja Pemeliharaan;54360000
+Ditjen Pengelolaan Ruang Laut;Direktorat Jasa Kelautan;Belanja Pemeliharaan;190700000
+Ditjen Pengelolaan Ruang Laut;Setditjen Pengelolaan Ruang Laut;Belanja Pemeliharaan;1184096000
+Ditjen Pengelolaan Ruang Laut;Total;Belanja Pemeliharaan;2675416000
+Ditjen Pengelolaan Ruang Laut;Pengelolaan Dan Rehabilitasi Terumbu Karang - CTI;Belanja Perjalanan Dalam Negeri;5632950000
+Ditjen Pengelolaan Ruang Laut;Pembangunan Masyarakat Pesisir (CCD-IFAD);Belanja Perjalanan Dalam Negeri;2669850000
+Ditjen Pengelolaan Ruang Laut;Direktorat Perencanaan Ruang Laut;Belanja Perjalanan Dalam Negeri;2956193000
+Ditjen Pengelolaan Ruang Laut;Direktorat Konservasi Dan Keanekaragaman Hayati Laut;Belanja Perjalanan Dalam Negeri;23987813000
+Ditjen Pengelolaan Ruang Laut;Direktorat Pendayagunaan Pesisir Dan Pulau-Pulau Kecil;Belanja Perjalanan Dalam Negeri;12953840000
+Ditjen Pengelolaan Ruang Laut;Direktorat Pendayagunaan Pulau-Pulau Kecil;Belanja Perjalanan Dalam Negeri;356894000
+Ditjen Pengelolaan Ruang Laut;Direktorat Jasa Kelautan;Belanja Perjalanan Dalam Negeri;9164650000
+Ditjen Pengelolaan Ruang Laut;Setditjen Pengelolaan Ruang Laut;Belanja Perjalanan Dalam Negeri;7198460000
+Ditjen Pengelolaan Ruang Laut;Total;Belanja Perjalanan Dalam Negeri;64920650000
+Ditjen Pengelolaan Ruang Laut;Pengelolaan Dan Rehabilitasi Terumbu Karang - CTI;Belanja Perjalanan Luar Negeri;2435000000
+Ditjen Pengelolaan Ruang Laut;Pembangunan Masyarakat Pesisir (CCD-IFAD);Belanja Perjalanan Luar Negeri;585000000
+Ditjen Pengelolaan Ruang Laut;Direktorat Konservasi Dan Keanekaragaman Hayati Laut;Belanja Perjalanan Luar Negeri;469700000
+Ditjen Pengelolaan Ruang Laut;Direktorat Pendayagunaan Pesisir Dan Pulau-Pulau Kecil;Belanja Perjalanan Luar Negeri;1112936000
+Ditjen Pengelolaan Ruang Laut;Setditjen Pengelolaan Ruang Laut;Belanja Perjalanan Luar Negeri;450000000
+Ditjen Pengelolaan Ruang Laut;Total;Belanja Perjalanan Luar Negeri;5052636000
+Ditjen Pengelolaan Ruang Laut;Direktorat Konservasi Dan Keanekaragaman Hayati Laut;Belanja Barang untuk diserahkan kepada masyarakat/Pemda;42033319000
+Ditjen Pengelolaan Ruang Laut;Direktorat Pendayagunaan Pesisir Dan Pulau-Pulau Kecil;Belanja Barang untuk diserahkan kepada masyarakat/Pemda;161345381000
+Ditjen Pengelolaan Ruang Laut;Direktorat Jasa Kelautan;Belanja Barang untuk diserahkan kepada masyarakat/Pemda;39732070000
+Ditjen Pengelolaan Ruang Laut;Total;Belanja Barang untuk diserahkan kepada masyarakat/Pemda;243110770000
+Ditjen Pengelolaan Ruang Laut;Pembangunan Masyarakat Pesisir (CCD-IFAD);Belanja Barang Lainnya untuk diserahkan kepada masyarakat/Pemda;1335235000
+Ditjen Pengelolaan Ruang Laut;Direktorat Konservasi Dan Keanekaragaman Hayati Laut;Belanja Barang Lainnya untuk diserahkan kepada masyarakat/Pemda;13498230000
+Ditjen Pengelolaan Ruang Laut;Direktorat Pendayagunaan Pesisir Dan Pulau-Pulau Kecil;Belanja Barang Lainnya untuk diserahkan kepada masyarakat/Pemda;5060000000
+Ditjen Pengelolaan Ruang Laut;Direktorat Jasa Kelautan;Belanja Barang Lainnya untuk diserahkan kepada masyarakat/Pemda;18205000000
+Ditjen Pengelolaan Ruang Laut;Total;Belanja Barang Lainnya untuk diserahkan kepada masyarakat/Pemda;38098465000
+Ditjen Pengelolaan Ruang Laut;Pembangunan Masyarakat Pesisir (CCD-IFAD);Belanja Modal Peralatan dan Mesin;730000000
+Ditjen Pengelolaan Ruang Laut;Direktorat Konservasi Dan Keanekaragaman Hayati Laut;Belanja Modal Peralatan dan Mesin;31619200000
+Ditjen Pengelolaan Ruang Laut;Direktorat Pendayagunaan Pesisir Dan Pulau-Pulau Kecil;Belanja Modal Peralatan dan Mesin;356000000
+Ditjen Pengelolaan Ruang Laut;Direktorat Jasa Kelautan;Belanja Modal Peralatan dan Mesin;1327000000
+Ditjen Pengelolaan Ruang Laut;Total;Belanja Modal Peralatan dan Mesin;34032200000
+Ditjen Pengelolaan Ruang Laut;Direktorat Konservasi Dan Keanekaragaman Hayati Laut;Belanja Modal Gedung dan Bangunan;2000000000
+Ditjen Pengelolaan Ruang Laut;Total;Belanja Modal Gedung dan Bangunan;2000000000
+Badan Riset Dan SDM KP;Pusat Riset Kelautan;Belanja Gaji dan Tunjangan PNS;3941268000
+Badan Riset Dan SDM KP;Pusat Riset Perikanan;Belanja Gaji dan Tunjangan PNS;6477961000
+Badan Riset Dan SDM KP;Pusat Pendidikan Kelautan Dan Perikanan;Belanja Gaji dan Tunjangan PNS;1450015000
+Badan Riset Dan SDM KP;Pusat Pelatihan Dan Penyuluhan Kelautan Dan Perikanan;Belanja Gaji dan Tunjangan PNS;97623893000
+Badan Riset Dan SDM KP;Set BRSDMKP;Belanja Gaji dan Tunjangan PNS;27690185000
+Badan Riset Dan SDM KP;Total;Belanja Gaji dan Tunjangan PNS;137183322000
+Badan Riset Dan SDM KP;Set BRSDMKP;Belanja Gaji dan Tunjangan Pegawai Non PNS;100205000
+Badan Riset Dan SDM KP;Total;Belanja Gaji dan Tunjangan Pegawai Non PNS;100205000
+Badan Riset Dan SDM KP;Pusat Riset Kelautan;Belanja Lembur;49260000
+Badan Riset Dan SDM KP;Pusat Riset Perikanan;Belanja Lembur;58267000
+Badan Riset Dan SDM KP;Set BRSDMKP;Belanja Lembur;117986000
+Badan Riset Dan SDM KP;Total;Belanja Lembur;225513000
+Badan Riset Dan SDM KP;Pusat Riset Kelautan;Belanja Tunj. Khusus & Belanja Pegawai Transito;4252235000
+Badan Riset Dan SDM KP;Pusat Riset Perikanan;Belanja Tunj. Khusus & Belanja Pegawai Transito;5937077000
+Badan Riset Dan SDM KP;Pusat Pendidikan Kelautan Dan Perikanan;Belanja Tunj. Khusus & Belanja Pegawai Transito;875568000
+Badan Riset Dan SDM KP;Pusat Pelatihan Dan Penyuluhan Kelautan Dan Perikanan;Belanja Tunj. Khusus & Belanja Pegawai Transito;95152794000
+Badan Riset Dan SDM KP;Set BRSDMKP;Belanja Tunj. Khusus & Belanja Pegawai Transito;29577132000
+Badan Riset Dan SDM KP;Total;Belanja Tunj. Khusus & Belanja Pegawai Transito;135794806000
+Badan Riset Dan SDM KP;Pusat Riset Kelautan;Belanja Barang Operasional;1641713000
+Badan Riset Dan SDM KP;Pusat Riset Perikanan;Belanja Barang Operasional;1401330000
+Badan Riset Dan SDM KP;Pusat Pendidikan Kelautan Dan Perikanan;Belanja Barang Operasional;720720000
+Badan Riset Dan SDM KP;Pusat Pelatihan Dan Penyuluhan Kelautan Dan Perikanan;Belanja Barang Operasional;5442900000
+Badan Riset Dan SDM KP;Set BRSDMKP;Belanja Barang Operasional;9961610000
+Badan Riset Dan SDM KP;Total;Belanja Barang Operasional;19168273000
+Badan Riset Dan SDM KP;Pusat Riset Kelautan;Belanja Barang Non Operasional;885403000
+Badan Riset Dan SDM KP;Pusat Riset Perikanan;Belanja Barang Non Operasional;693240000
+Badan Riset Dan SDM KP;Pusat Pendidikan Kelautan Dan Perikanan;Belanja Barang Non Operasional;24991074000
+Badan Riset Dan SDM KP;Pusat Penyuluhan Dan Pemberdayaan Masyarakat Kelautan Dan Perikanan;Belanja Barang Non Operasional;40948271000
+Badan Riset Dan SDM KP;Pusat Pelatihan Dan Penyuluhan Kelautan Dan Perikanan;Belanja Barang Non Operasional;169530649000
+Badan Riset Dan SDM KP;Set BRSDMKP;Belanja Barang Non Operasional;11782747000
+Badan Riset Dan SDM KP;Total;Belanja Barang Non Operasional;248831384000
+Badan Riset Dan SDM KP;Pusat Riset Kelautan;Belanja Barang Persediaan;28969000
+Badan Riset Dan SDM KP;Pusat Riset Perikanan;Belanja Barang Persediaan;260424000
+Badan Riset Dan SDM KP;Pusat Pendidikan Kelautan Dan Perikanan;Belanja Barang Persediaan;567252000
+Badan Riset Dan SDM KP;Pusat Pelatihan Dan Penyuluhan Kelautan Dan Perikanan;Belanja Barang Persediaan;110920000
+Badan Riset Dan SDM KP;Set BRSDMKP;Belanja Barang Persediaan;1190656000
+Badan Riset Dan SDM KP;Total;Belanja Barang Persediaan;2158221000
+Badan Riset Dan SDM KP;Pusat Riset Kelautan;Belanja Jasa;3285032000
+Badan Riset Dan SDM KP;Pusat Riset Perikanan;Belanja Jasa;2809130000
+Badan Riset Dan SDM KP;Pusat Pendidikan Kelautan Dan Perikanan;Belanja Jasa;8342064000
+Badan Riset Dan SDM KP;Pusat Penyuluhan Dan Pemberdayaan Masyarakat Kelautan Dan Perikanan;Belanja Jasa;110650000
+Badan Riset Dan SDM KP;Pusat Pelatihan Dan Penyuluhan Kelautan Dan Perikanan;Belanja Jasa;2918480000
+Badan Riset Dan SDM KP;Set BRSDMKP;Belanja Jasa;10010559000
+Badan Riset Dan SDM KP;Total;Belanja Jasa;27475915000
+Badan Riset Dan SDM KP;Pusat Riset Kelautan;Belanja Pemeliharaan;1047190000
+Badan Riset Dan SDM KP;Pusat Riset Perikanan;Belanja Pemeliharaan;1003472000
+Badan Riset Dan SDM KP;Pusat Pendidikan Kelautan Dan Perikanan;Belanja Pemeliharaan;348508000
+Badan Riset Dan SDM KP;Pusat Pelatihan Dan Penyuluhan Kelautan Dan Perikanan;Belanja Pemeliharaan;490230000
+Badan Riset Dan SDM KP;Set BRSDMKP;Belanja Pemeliharaan;5137842000
+Badan Riset Dan SDM KP;Total;Belanja Pemeliharaan;8027242000
+Badan Riset Dan SDM KP;Pusat Riset Kelautan;Belanja Perjalanan Dalam Negeri;693762000
+Badan Riset Dan SDM KP;Pusat Riset Perikanan;Belanja Perjalanan Dalam Negeri;1567539000
+Badan Riset Dan SDM KP;Pusat Pendidikan Kelautan Dan Perikanan;Belanja Perjalanan Dalam Negeri;3490437000
+Badan Riset Dan SDM KP;Pusat Penyuluhan Dan Pemberdayaan Masyarakat Kelautan Dan Perikanan;Belanja Perjalanan Dalam Negeri;1558626000
+Badan Riset Dan SDM KP;Pusat Pelatihan Dan Penyuluhan Kelautan Dan Perikanan;Belanja Perjalanan Dalam Negeri;18141467000
+Badan Riset Dan SDM KP;Set BRSDMKP;Belanja Perjalanan Dalam Negeri;19578854000
+Badan Riset Dan SDM KP;Total;Belanja Perjalanan Dalam Negeri;45030685000
+Badan Riset Dan SDM KP;Pusat Pendidikan Kelautan Dan Perikanan;Belanja Perjalanan Luar Negeri;715267000
+Badan Riset Dan SDM KP;Set BRSDMKP;Belanja Perjalanan Luar Negeri;1274013000
+Badan Riset Dan SDM KP;Total;Belanja Perjalanan Luar Negeri;1989280000
+Badan Riset Dan SDM KP;Pusat Riset Kelautan;Belanja Modal Tanah;299128000
+Badan Riset Dan SDM KP;Pusat Pendidikan Kelautan Dan Perikanan;Belanja Modal Tanah;300000000
+Badan Riset Dan SDM KP;Total;Belanja Modal Tanah;599128000
+Badan Riset Dan SDM KP;Pusat Riset Kelautan;Belanja Modal Peralatan dan Mesin;97072159000
+Badan Riset Dan SDM KP;Pusat Riset Perikanan;Belanja Modal Peralatan dan Mesin;773966000
+Badan Riset Dan SDM KP;Set BRSDMKP;Belanja Modal Peralatan dan Mesin;487634000
+Badan Riset Dan SDM KP;Total;Belanja Modal Peralatan dan Mesin;98333759000
+Badan Riset Dan SDM KP;Pusat Riset Kelautan;Belanja Modal Gedung dan Bangunan;121742090000
+Badan Riset Dan SDM KP;Pusat Riset Perikanan;Belanja Modal Gedung dan Bangunan;129297627000
+Badan Riset Dan SDM KP;Pusat Pendidikan Kelautan Dan Perikanan;Belanja Modal Gedung dan Bangunan;249002818000
+Badan Riset Dan SDM KP;Pusat Pelatihan Dan Penyuluhan Kelautan Dan Perikanan;Belanja Modal Gedung dan Bangunan;44365866000
+Badan Riset Dan SDM KP;Set BRSDMKP;Belanja Modal Gedung dan Bangunan;965185000
+Badan Riset Dan SDM KP;Total;Belanja Modal Gedung dan Bangunan;545373586000
+Badan Riset Dan SDM KP;Pusat Riset Kelautan;Belanja Modal Jalan, Irigasi dan Jaringan;755510000
+Badan Riset Dan SDM KP;Pusat Pendidikan Kelautan Dan Perikanan;Belanja Modal Jalan, Irigasi dan Jaringan;4554826000
+Badan Riset Dan SDM KP;Total;Belanja Modal Jalan, Irigasi dan Jaringan;5310336000
+Badan Riset Dan SDM KP;Pusat Pendidikan Kelautan Dan Perikanan;Belanja Modal Fisik Lainnya;24578001000
+Badan Riset Dan SDM KP;Total;Belanja Modal Fisik Lainnya;24578001000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Sekretariat BKIPM;Belanja Gaji dan Tunjangan PNS;15802987000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Total;Belanja Gaji dan Tunjangan PNS;15802987000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Sekretariat BKIPM;Belanja Tunj. Khusus & Belanja Pegawai Transito;10193463000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Total;Belanja Tunj. Khusus & Belanja Pegawai Transito;10193463000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Pusat Pengendalian Mutu;Belanja Barang Operasional;691278000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Pusat Standardisasi Sistem Dan Kepatuhan;Belanja Barang Operasional;589890000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Sekretariat BKIPM;Belanja Barang Operasional;2317850000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Pusat Karantina Ikan;Belanja Barang Operasional;1147660000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Total;Belanja Barang Operasional;4746678000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Pusat Pengendalian Mutu;Belanja Barang Non Operasional;1982088000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Pusat Standardisasi Sistem Dan Kepatuhan;Belanja Barang Non Operasional;1230400000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Sekretariat BKIPM;Belanja Barang Non Operasional;6510372000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Pusat Karantina Ikan;Belanja Barang Non Operasional;1507257000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Total;Belanja Barang Non Operasional;11230117000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Pusat Pengendalian Mutu;Belanja Barang Persediaan;988500000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Pusat Standardisasi Sistem Dan Kepatuhan;Belanja Barang Persediaan;189000000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Sekretariat BKIPM;Belanja Barang Persediaan;150080000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Pusat Karantina Ikan;Belanja Barang Persediaan;948442000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Total;Belanja Barang Persediaan;2276022000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Pusat Pengendalian Mutu;Belanja Jasa;1923852000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Pusat Standardisasi Sistem Dan Kepatuhan;Belanja Jasa;2617500000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Sekretariat BKIPM;Belanja Jasa;5947141000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Pusat Karantina Ikan;Belanja Jasa;1962900000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Total;Belanja Jasa;12451393000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Pusat Pengendalian Mutu;Belanja Pemeliharaan;305610000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Pusat Standardisasi Sistem Dan Kepatuhan;Belanja Pemeliharaan;208660000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Sekretariat BKIPM;Belanja Pemeliharaan;871084000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Pusat Karantina Ikan;Belanja Pemeliharaan;600040000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Total;Belanja Pemeliharaan;1985394000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Sekretariat BKIPM;Belanja Perjalanan Dalam Negeri;9358492000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Total;Belanja Perjalanan Dalam Negeri;9358492000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Sekretariat BKIPM;Belanja Perjalanan Luar Negeri;933834000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Total;Belanja Perjalanan Luar Negeri;933834000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Pusat Pengendalian Mutu;Belanja Modal Peralatan dan Mesin;631157000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Pusat Standardisasi Sistem Dan Kepatuhan;Belanja Modal Peralatan dan Mesin;276000000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Sekretariat BKIPM;Belanja Modal Peralatan dan Mesin;2168250000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Pusat Karantina Ikan;Belanja Modal Peralatan dan Mesin;884000000
+Badan Karantina Ikan, Pengendalian Mutu Dan Keamanan Hasil Perikanan;Total;Belanja Modal Peralatan dan Mesin;3959407000
