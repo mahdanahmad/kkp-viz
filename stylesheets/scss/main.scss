@@ -39,7 +39,10 @@ div#root {
 		height: calc(100% - #{$header-height} - #{$wrapper-pad}); padding-bottom: $wrapper-pad;
 		& > div { display: inline-block; height: 100%; }
 		#side-bar { width: $side-width; }
-		#mein-bar { width: calc(100% - #{$side-width}); }
+		#mein-bar {
+			position: relative; width: calc(100% - #{$side-width});
+			#expand-toggler { position: absolute; right: 0; top: -25px; padding: 10px; border: 1px solid; border-radius: 5px; background: rgba(black, .2); }
+		}
 
 		svg {
 			text { fill: white; }

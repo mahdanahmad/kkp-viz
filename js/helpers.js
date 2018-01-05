@@ -7,7 +7,9 @@ function wrap(text, width, isVertical) {
 		let lineNumber = 0;
 		let lineHeight = 1.1; // ems
 		let y = "" + lineHeight;
-		let dy = parseFloat(y);
+		let dy = parseFloat(y) * 2;
+		// let y = text.attr("y");
+		// let dy = parseFloat(text.attr("dy"));
 		let tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em");
 		while (word = words.pop()) {
 			line.push(word);
@@ -25,7 +27,7 @@ function wrap(text, width, isVertical) {
 				}
 			}
 		}
-		if (isVertical) { text.attr('transform', 'translate(-8, ' + (-((lineNumber * lineHeight + dy) / 2) * 10 - 4) + ')'); }
+		if (isVertical) { text.attr('transform', 'translate(-8, ' + (-((lineNumber * lineHeight + dy) / 2) * 10 - 8) + ')'); }
 	});
 }
 
