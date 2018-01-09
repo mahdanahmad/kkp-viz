@@ -43,10 +43,7 @@ function createScatter(belanja, palette, data) {
 			.attr("class", (o) => (_.kebabCase(o.kedeputian) + " dot"))
 			.attr("r", 4)
 			.attr("fill", (o) => (palette[o.kedeputian]))
-			// .attr("cx", (o) => (x(o.belanja) + _.random(5, x.bandwidth() - 5)))
 			.attr("cx", (o) => (x(o.belanja) + (x.bandwidth() / 2)))
-			// .attr("cy", (o) => (yByBelanja[o.belanja](o.anggaran)));
-			// .attr("cy", (o) => (y(o.anggaran)));
 			.attr("cy", height);
 
 	svg.append('g')
