@@ -23,6 +23,9 @@ function createScatter(belanja, palette, data) {
 		return d3.scaleLinear().range([height, 0]).domain([minByBel * 0.75, maxByBel * 1.10]);
 	}).value();
 
+	let voronoiNorm		= _.chain(belanja).map((o, i) => ([o, d3.voronoi().x((o) => (o.xRand)).y((o) => (o.yNorm)).extent([[x.bandwidth() * i, 0], [x.bandwidth() * (i + 1), height]]) ])).fromPairs().value();
+	let voronoiStrc		= _.chain(belanja).map((o, i) => ([o, d3.voronoi().x((o) => (o.xRand)).y((o) => (o.yStrc)).extent([[x.bandwidth() * i, 0], [x.bandwidth() * (i + 1), height]]) ])).fromPairs().value();
+
 	let svg = d3.select("#mein-bar").append("svg")
 		.attr("id", "scatter-viz")
     	.attr("width", canvasWidth)
@@ -37,14 +40,39 @@ function createScatter(belanja, palette, data) {
 			.selectAll(".tick text")
 				.call(wrap, x.bandwidth() - 5);
 
+	data	= data.map((o) => (_.assign(o, {
+		xNorm: x(o.belanja) + (x.bandwidth() / 2),
+		xRand: x(o.belanja) + (_.random(6, x.bandwidth() - 6)),
+		yNorm: y(o.anggaran),
+		yStrc: yByBelanja[o.belanja](o.anggaran),
+	})));
+
+	_.chain(data).groupBy('belanja').forEach((o, i) => {
+		let polyNorm	= voronoiNorm[i](o).polygons();
+		let polyStrc	= voronoiStrc[i](o).polygons();
+
+		o.map((d, j) => (_.assign(d, { polyNorm: polyNorm[j], polyStrc: polyStrc[j] })));
+	}).value();
+	// let polyStrc	= voronoiStrc(data).polygons();
+
+	// data	= data.map((o, i) => (_.assign(o, { polyNorm: polyNorm[i], polyStrc: polyStrc[i] })));
+
 	let groupCircle	= svg.append("g").attr('id', 'dot-crowd').selectAll(".group-circle").data(data).enter().append("g");
 
 	groupCircle.append("circle")
 			.attr("class", (o) => (_.kebabCase(o.kedeputian) + " dot"))
 			.attr("r", 4)
 			.attr("fill", (o) => (palette[o.kedeputian]))
-			.attr("cx", (o) => (x(o.belanja) + (x.bandwidth() / 2)))
+			.attr("cx", (o) => (o.xRand))
 			.attr("cy", height);
+
+	groupCircle.append("path")
+			.attr("class", "polygons normal")
+			.attr("d", (o) => (o.polyNorm ? "M" + o.polyNorm.join("L") + "Z" : null));
+
+	groupCircle.append("path")
+			.attr("class", "polygons streched")
+			.attr("d", (o) => (o.polyStrc ? "M" + o.polyStrc.join("L") + "Z" : null));
 
 	svg.append('g')
 		.attr('class', 'grid-wrapper')
@@ -69,9 +97,15 @@ function createScatter(belanja, palette, data) {
 		if (next == 0) {
 			svg.selectAll('.dot').transition(transition)
 				.attr('cy', (o) => (y(o.anggaran)));
+
+			d3.selectAll('.polygons.normal').classed('hidden', false);
+			d3.selectAll('.polygons.streched').classed('hidden', true);
 		} else {
 			svg.selectAll('.dot').transition(transition)
 				.attr('cy', (o) => (yByBelanja[o.belanja](o.anggaran)));
+
+			d3.selectAll('.polygons.normal').classed('hidden', true);
+			d3.selectAll('.polygons.streched').classed('hidden', false);
 		}
 
 		$( '#expand-toggler' ).html(toggle[next]);
