@@ -26,12 +26,13 @@ function createSide(unit, palette, data) {
 			.attr('id', function() { return _.kebabCase(d3.select(this).text()); })
 			.attr('class', 'cursor-pointer')
 			.call(wrap, (margin.left - 15), true)
-			.on('mouseover', onMouseOver)
-			.on('mouseout', onMouseOut)
-			.on('click', onClick);
+			.on('mouseover', spotlightSpotter)
+			.on('mouseout', spotlightWiper)
+			.on('click', ClickOnGroupBar);
 
 	let groupBar	= svg.append('g')
 						.attr("id", "bar-wrapper")
+						.attr("class", "cursor-pointer")
 						.selectAll('group-bar')
 						.data(unit)
 						.enter().append('g')
@@ -40,14 +41,14 @@ function createSide(unit, palette, data) {
 							.style('fill', (o) => (palette[o]));
 
 	groupBar.append('rect')
-		.attr('class', 'bar fill cursor-pointer')
+		.attr('class', 'bar fill')
 		// .attr('width', (o) => (x(data[o])))
 		.attr('width', 0)
 		.attr('height', y.bandwidth())
 		.attr('y', (o) => (y(o)));
 
 	groupBar.append('rect')
-		.attr('class', 'bar cream cursor-pointer')
+		.attr('class', 'bar cream')
 		.attr('width', 4)
 		.attr('height', y.bandwidth())
 		.attr('y', (o) => (y(o)))
@@ -55,15 +56,21 @@ function createSide(unit, palette, data) {
 
 	let textMargin	= 10;
 	groupBar.append('text')
-		.attr('class', 'detil-idr cursor-pointer')
+		.attr('class', 'detil-idr')
 		.attr('y', (o) => (y(o) + (y.bandwidth() / 2) + 5))
 		.attr('x', textMargin)
 		.text((o) => (nFormatter(data[o])));
 
+	groupBar.append('rect')
+		.attr('class', 'bar overlay')
+		.attr('width', width + margin.right)
+		.attr('height', y.bandwidth())
+		.attr('y', (o) => (y(o)))
+
 	groupBar
-		.on('mouseover', onMouseOver)
-		.on('mouseout', onMouseOut)
-		.on('click', onClick);
+		.on('mouseover', spotlightSpotter)
+		.on('mouseout', spotlightWiper)
+		.on('click', ClickOnGroupBar);
 
 	svg.append('g')
 		.attr('class', 'grid-wrapper')
@@ -84,23 +91,12 @@ function createSide(unit, palette, data) {
         .attr('width', (o) => (x(data[o]) || 0));
 
 	svg.selectAll('.bar.cream').transition(transition)
-        .attr('x', (o) => (x(data[o]) || 0));
+        .attr('x', (o) => (x(data[o]) - 1 || 0));
 
 	svg.selectAll('text.detil-idr').transition(transition)
         .attr('x', (o) => (x(data[o]) || 0) + textMargin);
 }
 
-function onMouseOver(o) {
-	d3.selectAll('.group-bar:not(#' + _.kebabCase(o) + ')').classed('shadow', true);
-	d3.selectAll('.tick text:not(#' + _.kebabCase(o) + ')').classed('shadow', true);
-	d3.select('#' + _.kebabCase(o)).classed('spotlight', true);
-}
-
-function onMouseOut(o) {
-	d3.selectAll('.group-bar').classed('shadow', false).classed('spotlight', false);
-	d3.selectAll('.tick text').classed('shadow', false);
-}
-
-function onClick(o) {
+function ClickOnGroupBar(o) {
 
 }

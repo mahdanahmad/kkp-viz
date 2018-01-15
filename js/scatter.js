@@ -1,5 +1,3 @@
-const toggle	= ['Expand belanja', 'Shrink belanja'];
-
 function createScatter(belanja, palette, data) {
 	d3.select("#mein-bar").select("svg#scatter-viz").remove();
 
@@ -23,8 +21,8 @@ function createScatter(belanja, palette, data) {
 		return d3.scaleLinear().range([height, 0]).domain([minByBel * 0.75, maxByBel * 1.10]);
 	}).value();
 
-	let voronoiNorm		= _.chain(belanja).map((o, i) => ([o, d3.voronoi().x((o) => (o.xRand)).y((o) => (o.yNorm)).extent([[x.bandwidth() * i, 0], [x.bandwidth() * (i + 1), height]]) ])).fromPairs().value();
-	let voronoiStrc		= _.chain(belanja).map((o, i) => ([o, d3.voronoi().x((o) => (o.xRand)).y((o) => (o.yStrc)).extent([[x.bandwidth() * i, 0], [x.bandwidth() * (i + 1), height]]) ])).fromPairs().value();
+	let voronoiNorm		= _.chain(belanja).map((o, i) => ([o, d3.voronoi().x((o) => (o.x)).y((o) => (o.yNorm)).extent([[x.bandwidth() * i, 0], [x.bandwidth() * (i + 1), height]]) ])).fromPairs().value();
+	let voronoiStrc		= _.chain(belanja).map((o, i) => ([o, d3.voronoi().x((o) => (o.x)).y((o) => (o.yStrc)).extent([[x.bandwidth() * i, 0], [x.bandwidth() * (i + 1), height]]) ])).fromPairs().value();
 
 	let svg = d3.select("#mein-bar").append("svg")
 		.attr("id", "scatter-viz")
@@ -41,8 +39,8 @@ function createScatter(belanja, palette, data) {
 				.call(wrap, x.bandwidth() - 5);
 
 	data	= data.map((o) => (_.assign(o, {
-		xNorm: x(o.belanja) + (x.bandwidth() / 2),
-		xRand: x(o.belanja) + (_.random(6, x.bandwidth() - 6)),
+		// x: x(o.belanja) + (x.bandwidth() / 2),
+		x: x(o.belanja) + (_.random(6, x.bandwidth() - 6)),
 		yNorm: y(o.anggaran),
 		yStrc: yByBelanja[o.belanja](o.anggaran),
 	})));
@@ -60,19 +58,31 @@ function createScatter(belanja, palette, data) {
 	let groupCircle	= svg.append("g").attr('id', 'dot-crowd').selectAll(".group-circle").data(data).enter().append("g");
 
 	groupCircle.append("circle")
-			.attr("class", (o) => (_.kebabCase(o.kedeputian) + " dot"))
-			.attr("r", 4)
-			.attr("fill", (o) => (palette[o.kedeputian]))
-			.attr("cx", (o) => (o.xRand))
-			.attr("cy", height);
+		.attr("class", (o) => (_.kebabCase(o.kedeputian) + " dot"))
+		.attr("r", 4)
+		.attr("fill", (o) => (palette[o.kedeputian]))
+		.attr("cx", (o) => (o.x))
+		.attr("cy", height);
+
+	groupCircle.append("text")
+		.attr('class', (o) => (_.kebabCase(o.kedeputian) + " scatter-idr hidden"))
+		.attr('text-anchor', 'middle')
+		.attr("x", (o) => (o.x))
+		.attr("y", height)
+		.text((o) => (nFormatter(o.anggaran)));
 
 	groupCircle.append("path")
-			.attr("class", "polygons normal")
-			.attr("d", (o) => (o.polyNorm ? "M" + o.polyNorm.join("L") + "Z" : null));
+		.attr("class", "polygons normal")
+		.attr("d", (o) => (o.polyNorm ? "M" + o.polyNorm.join("L") + "Z" : null));
 
 	groupCircle.append("path")
-			.attr("class", "polygons streched")
-			.attr("d", (o) => (o.polyStrc ? "M" + o.polyStrc.join("L") + "Z" : null));
+		.attr("class", "polygons streched")
+		.attr("d", (o) => (o.polyStrc ? "M" + o.polyStrc.join("L") + "Z" : null));
+
+	groupCircle
+		.on('mouseover', (o) => { spotlightSpotter(o.kedeputian); })
+		.on('mouseout', spotlightWiper)
+		// .on('click', ClickOnGroupBar);
 
 	svg.append('g')
 		.attr('class', 'grid-wrapper')
@@ -84,12 +94,12 @@ function createScatter(belanja, palette, data) {
 			.attr('y1', 0)
 			.attr('y2', height);
 
-
 	function changeScatterHeight() {
 		let current	= $( '#expand-toggler' ).html();
 		let next	= (_.indexOf(toggle, current) + 1) % 2;
 
 		let time		= 500;
+		let textMargin	= 10;
 		let transition	= d3.transition()
 	        .duration(time)
 	        .ease(d3.easeLinear);
@@ -98,11 +108,17 @@ function createScatter(belanja, palette, data) {
 			svg.selectAll('.dot').transition(transition)
 				.attr('cy', (o) => (y(o.anggaran)));
 
+			svg.selectAll('text.scatter-idr').transition(transition)
+				.attr('y', (o) => (y(o.anggaran) - textMargin));
+
 			d3.selectAll('.polygons.normal').classed('hidden', false);
 			d3.selectAll('.polygons.streched').classed('hidden', true);
 		} else {
 			svg.selectAll('.dot').transition(transition)
 				.attr('cy', (o) => (yByBelanja[o.belanja](o.anggaran)));
+
+			svg.selectAll('text.scatter-idr').transition(transition)
+				.attr('y', (o) => (yByBelanja[o.belanja](o.anggaran) - textMargin));
 
 			d3.selectAll('.polygons.normal').classed('hidden', true);
 			d3.selectAll('.polygons.streched').classed('hidden', false);

@@ -7,9 +7,11 @@ svg#side-viz {
 	}
 	#bar-wrapper {
 		.group-bar {
-			.bar.fill { fill-opacity: .1; }
+			.bar { stroke: none; }
+			.bar.overlay { fill: transparent; }
+			.bar.fill { fill-opacity: .2; }
 			&.shadow { opacity: $shadow-opacity; }
-			&.spotlight { .bar.fill { fill-opacity: .4; }}
+			&.spotlight { .bar.fill { fill-opacity: 1; }}
 		}
 	}
 }

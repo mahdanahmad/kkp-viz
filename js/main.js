@@ -1,4 +1,4 @@
-const colors	= ['#94ac6c', '#d4b44c', '#ccc4bc', '#6c1414', '#64bcdc', '#a46c54', '#c44434', '#fcb47c', '#bc6494'];
+const colors	= ['#94ac6c', '#d4b44c', '#ccc4bc', '#98DBC6', '#64bcdc', '#a46c54', '#c44434', '#fcb47c', '#bc6494'];
 
 $.get('public/data.csv', ( read ) => {
 	const raw		= d3.dsvFormat(';').parse(read).map((o) => _.assign(o, { anggaran: parseInt(o.anggaran) }));
