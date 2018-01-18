@@ -1,8 +1,8 @@
-function createSide(unit, palette, data) {
-	d3.select("#side-bar").selectAll("svg").remove();
+function createSide(unit, data) {
+	d3.select(sideDest).selectAll("svg").remove();
 
-	let canvasWidth		= $('#side-bar').outerWidth(true);
-	let canvasHeight	= $('#side-bar').outerHeight(true);
+	let canvasWidth		= $(sideDest).outerWidth(true);
+	let canvasHeight	= $(sideDest).outerHeight(true);
 
 	let margin 			= { top: 15, right: 75, bottom: 40, left: 101 };
 	let width			= canvasWidth - margin.right - margin.left;
@@ -11,8 +11,8 @@ function createSide(unit, palette, data) {
 	let x 				= d3.scaleLinear().range([0, width]).domain([0, _.chain(data).values().max().value()]);
 	let y 				= d3.scaleBand().range([0, height]).padding(0).domain(unit);
 
-	let svg = d3.select("#side-bar").append("svg")
-		.attr("id", "side-viz")
+	let svg = d3.select(sideDest).append("svg")
+		.attr("id", sideId)
     	.attr("width", canvasWidth)
         .attr("height", canvasHeight)
 		.append('g')
@@ -98,5 +98,38 @@ function createSide(unit, palette, data) {
 }
 
 function ClickOnGroupBar(o) {
+	if (selected.length < 3 || _.includes(selected, o)) {
+		let svg	= d3.select(sideDest + ' > svg#' + sideId + ' > g');
 
+		if (_.includes(selected, o)) {
+			_.pull(selected, o);
+
+			svg.select('.group-bar#' + _.kebabCase(o)).classed('selected', false);
+			svg.select('.tick text#' + _.kebabCase(o)).classed('selected', false);
+		} else {
+			selected.push(o);
+
+			svg.select('.group-bar#' + _.kebabCase(o)).classed('selected', true);
+			svg.select('.tick text#' + _.kebabCase(o)).classed('selected', true);
+		}
+
+		svg.selectAll('.group-bar:not(.selected), .tick text:not(.selected)').classed('unintended', true);
+
+		switch (selected.length) {
+			case 0:
+				$( '#detil-bar, #compare-bar' ).slideUp();
+				$( '#mein-bar' ).slideDown();
+
+				svg.selectAll('.group-bar, .tick text').classed('unintended', false);
+				break;
+			case 1:
+				$( '#mein-bar, #compare-bar' ).slideUp();
+				$( '#detil-bar' ).slideDown();
+
+				createPolygonRatio(kedepData[selected[0]], palette[selected[0]]);
+				break;
+			default:
+
+		}
+	}
 }

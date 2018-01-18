@@ -1,8 +1,8 @@
-function createScatter(belanja, palette, data) {
-	d3.select("#mein-bar").select("svg#scatter-viz").remove();
+function createScatter(belanja, data) {
+	d3.select(scttrDest).select("svg#" + scttrId).remove();
 
-	let canvasWidth		= $('#mein-bar').outerWidth(true);
-	let canvasHeight	= $('#mein-bar').outerHeight(true);
+	let canvasWidth		= $(scttrDest).outerWidth(true);
+	let canvasHeight	= $(scttrDest).outerHeight(true);
 
 	let margin 			= { top: 15, right: 0, bottom: 60, left: 25 };
 	let width			= canvasWidth - margin.right - margin.left;
@@ -24,8 +24,8 @@ function createScatter(belanja, palette, data) {
 	let voronoiNorm		= _.chain(belanja).map((o, i) => ([o, d3.voronoi().x((o) => (o.x)).y((o) => (o.yNorm)).extent([[x.bandwidth() * i, 0], [x.bandwidth() * (i + 1), height]]) ])).fromPairs().value();
 	let voronoiStrc		= _.chain(belanja).map((o, i) => ([o, d3.voronoi().x((o) => (o.x)).y((o) => (o.yStrc)).extent([[x.bandwidth() * i, 0], [x.bandwidth() * (i + 1), height]]) ])).fromPairs().value();
 
-	let svg = d3.select("#mein-bar").append("svg")
-		.attr("id", "scatter-viz")
+	let svg = d3.select(scttrDest).append("svg")
+		.attr("id", scttrId)
     	.attr("width", canvasWidth)
         .attr("height", canvasHeight)
 		.append('g')

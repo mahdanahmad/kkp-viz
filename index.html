@@ -18,6 +18,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script> -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/async/2.6.0/async.min.js"></script>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.min.js"></script>
 
@@ -25,6 +26,7 @@
 		<script src="js/helpers.js"></script>
 		<script src="js/connector.js"></script>
 
+		<script src="js/polygons.js"></script>
 		<script src="js/sidebar.js"></script>
 		<script src="js/scatter.js"></script>
 		<script src="js/main.js"></script>
@@ -32,12 +34,18 @@
 	<body>
 	    <div id="root" class="cursor-default">
 			<div id="header">
-				<span id="title">Anggaran Kementerian Kelautan dan Perikanan</span>
+				<span id="title">Anggaran Kementerian Kelautan dan Perikanan. Total: </span><span id="total-anggaran"></span>
 			</div>
 			<div id="content">
 				<div id="side-bar" class="float-left"></div>
 				<div id="mein-bar" class="float-right">
 					<div id="expand-toggler" class="cursor-pointer"></div>
+				</div>
+				<div id="detil-bar">
+
+				</div>
+				<div id="compare-bar">
+
 				</div>
 			</div>
 		</div>

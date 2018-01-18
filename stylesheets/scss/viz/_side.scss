@@ -3,15 +3,22 @@ $shadow-opacity	: .2;
 svg#side-viz {
 	#axis--x {
 		path { stroke: none; }
-		.tick text.shadow { opacity: $shadow-opacity; }
+		.tick text {
+			&.shadow, &.unintended { opacity: $shadow-opacity; }
+			&.selected, &.spotlight { opacity: 1; }
+		}
 	}
 	#bar-wrapper {
 		.group-bar {
 			.bar { stroke: none; }
 			.bar.overlay { fill: transparent; }
 			.bar.fill { fill-opacity: .2; }
-			&.shadow { opacity: $shadow-opacity; }
-			&.spotlight { .bar.fill { fill-opacity: 1; }}
+			&.shadow, &.unintended { opacity: $shadow-opacity; }
+			&.spotlight, &.selected {
+				opacity: 1!important;
+				.bar.fill { fill-opacity: 1!important; }
+				text { opacity: 1!important; }
+			}
 		}
 	}
 }
