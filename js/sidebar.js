@@ -123,13 +123,14 @@ function ClickOnGroupBar(o) {
 				svg.selectAll('.group-bar, .tick text').classed('unintended', false);
 				break;
 			case 1:
-				$( '#mein-bar, #compare-bar' ).slideUp();
-				$( '#detil-bar' ).slideDown();
-
-				createPolygonRatio(kedepData[selected[0]], palette[selected[0]]);
+				d3.select(polyDest).select("svg#" + polyId).remove()
+				$( '#mein-bar, #compare-bar' ).slideUp(() => { });
+				$( '#detil-bar' ).slideDown(() => { createPolygonRatio(kedepData[selected[0]], palette[selected[0]]); });
 				break;
 			default:
-
+				d3.select(barDest).select("svg#" + barId).remove()
+				$( '#mein-bar, #detil-bar' ).slideUp(() => { });
+				$( '#compare-bar' ).slideDown(() => { createBarComparation(_.pick(barData, selected), _.pick(palette, selected)); });
 		}
 	}
 }
