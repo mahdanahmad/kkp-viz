@@ -45,7 +45,13 @@ div#root {
 			#expand-toggler { position: absolute; right: 0; top: -25px; padding: 10px; border: 1px solid; border-radius: 5px; background: rgba(black, .2); }
 		}
 		#detil-bar {
-
+			position: relative;
+			#detil-tooltips {
+				position: absolute; background: rgba(black, .75); padding: 7.5px 10px; border-radius: 3px;
+				&::after { top: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-width: 5px; margin-top: -5px; }
+				&.left::after { right: 100%; border-right-color: rgba(black, .75); }
+				&.right::after { left: 100%; border-left-color: rgba(black, .75); }
+			}
 		}
 		#compare-bar {
 
