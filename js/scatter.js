@@ -80,9 +80,15 @@ function createScatter(belanja, data) {
 		.attr("d", (o) => (o.polyStrc ? "M" + o.polyStrc.join("L") + "Z" : null));
 
 	groupCircle
-		.on('mouseover', (o) => { spotlightSpotter(o.kedeputian); })
-		.on('mouseout', spotlightWiper)
-		// .on('click', ClickOnGroupBar);
+		.on('mouseover', (o) => { if (!holdit) { spotlightSpotter(o.kedeputian); } })
+		.on('mouseout', () => { if (!holdit) { spotlightWiper(); } })
+		.on('click', (o) => {
+			holdit = !holdit;
+			if (!holdit) {
+				spotlightWiper();
+				spotlightSpotter(o.kedeputian);
+			}
+		});
 
 	svg.append('g')
 		.attr('class', 'grid-wrapper')
@@ -93,6 +99,9 @@ function createScatter(belanja, data) {
 			.attr('x2', (o) => (o))
 			.attr('y1', 0)
 			.attr('y2', height);
+
+	svg
+		.on('mouseleave', () => { holdit = false; spotlightWiper(); });
 
 	function changeScatterHeight() {
 		let current	= $( '#expand-toggler' ).html();

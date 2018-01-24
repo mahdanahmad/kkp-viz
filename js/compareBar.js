@@ -8,7 +8,10 @@ function createBarComparation(data, color) {
 	let width			= canvasWidth - margin.right - margin.left;
 	let height			= canvasHeight - margin.top - margin.bottom;
 
-	let constructed		= _.chain(data).flatMap().groupBy('belanja').map((o, key) => (_.chain(o).map((d) => ([d.kedeputian, d.anggaran])).concat([['belanja', key]]).fromPairs().value())).value();
+	let constructed		= _.chain(data).flatMap().groupBy('belanja').map((o, key) => {
+		let current	= _.chain(o).map((d) => ([d.kedeputian, d.anggaran])).concat([['belanja', key]]).fromPairs().value();
+		return _.chain(selected).concat('belanja').map((o) => [o, (current[o] || 0)]).fromPairs().value();
+	}).value()
 	let maxvalue		= _.chain(constructed).map((o) => (_.chain(o).filter(_.isInteger).sum().value())).max().value();
 
 	let x 				= d3.scaleBand().rangeRound([0, width]).paddingInner(0.05).align(0.1).domain(_.intersection(belanja, _.map(constructed, 'belanja')));

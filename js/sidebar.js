@@ -4,7 +4,7 @@ function createSide(unit, data) {
 	let canvasWidth		= $(sideDest).outerWidth(true);
 	let canvasHeight	= $(sideDest).outerHeight(true);
 
-	let margin 			= { top: 15, right: 75, bottom: 40, left: 101 };
+	let margin 			= { top: 15, right: 75, bottom: 60, left: 101 };
 	let width			= canvasWidth - margin.right - margin.left;
 	let height			= canvasHeight - margin.top - margin.bottom;
 
@@ -117,20 +117,36 @@ function ClickOnGroupBar(o) {
 
 		switch (selected.length) {
 			case 0:
+				$( '#selection-remover' ).addClass('hidden');
+
 				$( '#detil-bar, #compare-bar' ).slideUp();
 				$( '#mein-bar' ).slideDown();
 
 				svg.selectAll('.group-bar, .tick text').classed('unintended', false);
 				break;
 			case 1:
+				$( '#selection-remover' ).removeClass('hidden');
+
 				d3.select(polyDest).select("svg#" + polyId).remove()
 				$( '#mein-bar, #compare-bar' ).slideUp(() => { });
 				$( '#detil-bar' ).slideDown(() => { createPolygonRatio(kedepData[selected[0]], palette[selected[0]]); });
 				break;
 			default:
+				$( '#selection-remover' ).removeClass('hidden');
+
 				d3.select(barDest).select("svg#" + barId).remove()
 				$( '#mein-bar, #detil-bar' ).slideUp(() => { });
 				$( '#compare-bar' ).slideDown(() => { createBarComparation(_.pick(barData, selected), _.pick(palette, selected)); });
 		}
 	}
+}
+
+function removeSelection() {
+	selected	= [];
+
+	$( '#detil-bar, #compare-bar' ).slideUp();
+	$( '#mein-bar' ).slideDown();
+	$( '#selection-remover' ).addClass('hidden');
+	
+	d3.select(sideDest + ' > svg#' + sideId + ' > g').selectAll('.group-bar, .tick text').classed('unintended', false).classed('selected', false);
 }

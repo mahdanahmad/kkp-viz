@@ -17,3 +17,5 @@ let barData		= {};
 let palette		= {};
 let belanja		= [];
 let selected	= [];
+
+let holdit		= false;
