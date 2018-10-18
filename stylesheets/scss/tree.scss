@@ -36,11 +36,10 @@ div#root {
 	svg {
 		g#tree-wrapper {
 			g {
-				circle { fill: #999; }
+				circle { fill: #555; fill-opacity: .5 }
 				text {  }
 				&.active {
-					circle { fill: #555; }
-					text { fill-opacity: 1!important; }
+					circle, text { fill-opacity: 1!important; }
 				}
 				&.unintended {
 					circle {  }

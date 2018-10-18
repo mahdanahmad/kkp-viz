@@ -157,7 +157,7 @@ function createTree(data, align) {
 
 	let link	= canvas.append('g')
 		.selectAll('path').data(root.links()).enter().append('path')
-			.attr('class', (o) => (_.chain(o.target.data.related).concat([o.target.data.name, o.target.data.state, o.target.data.duplicate]).map((d) => _.kebabCase(d)).join(' ').value()))
+			.attr('class', (o) => (_.chain(o.target.data.related).concat([o.target.data.name, o.target.data.state, o.target.data.duplicate, o.target.data.type]).map((d) => _.kebabCase(d)).join(' ').value()))
 			.attr('d', d3.linkRadial()
 			.angle(o => o.x)
 			.radius(o => o.y))
@@ -168,7 +168,7 @@ function createTree(data, align) {
 		.attr('stroke-linejoin', 'round')
 		.attr('stroke-width', 3)
 		.selectAll('g').data(root.descendants()).enter().append('g')
-			.attr('class', (o) => (_.chain(o.data.related).concat([o.data.name, o.data.state, o.data.duplicate]).map((d) => _.kebabCase(d)).join(' ').value()))
+			.attr('class', (o) => (_.chain(o.data.related).concat([o.data.name, o.data.state, o.data.duplicate, o.data.type]).map((d) => _.kebabCase(d)).join(' ').value()))
 			.attr('transform', o => `rotate(${o.x * 180 / Math.PI - 90})translate(${o.y},0)`);
 
 	node.append('circle')
@@ -202,7 +202,7 @@ function onMouseover(o) {
 	svg.selectAll('path:not(.' + _.kebabCase(o.data.name) + ')').classed('unintended', true);
 
 	details.select('#ceil').text((o.parent.data.name !== 'hidden' ? (o.parent.data.name + ' > ') : '') + o.data.name + '. Total anggaran: ' + nFormatter(o.data.total) + ' (' + o.data.percentage + '%)');
-	details.select('#floor').text('Ditemukan dalam ' + constructDetailFloor((colums.indexOf(o.data.type) < 2 ? [2,3] : [0,1]), o.data.related) + '.' + (_.chain(dups).keys().includes(o.data.name).value() ? (' Terduplikasi dalam ' + dups[o.data.name] + ' kategori.') : ''));
+	details.select('#floor').text('Ditemukan dalam ' + constructDetailFloor((colums.indexOf(o.data.type) < 2 ? [2,3] : [0,1])) + '.' + (_.chain(dups).keys().includes(o.data.name).value() ? (' Terduplikasi dalam ' + dups[o.data.name] + ' kategori.') : ''));
 }
 
 function onMouseout() {
@@ -210,9 +210,9 @@ function onMouseout() {
 	details.selectAll('text').text('');
 }
 
-function constructDetailFloor(selected, related) {
+function constructDetailFloor(selected) {
 	return _.chain(selected).map((o) => {
-		let count	= _.intersection(uniq[colums[o]], related).length;
+		let count	= svg.selectAll('g.active.' + colums[o]).size();
 
 		return (count + ' ' + shown[o] + ' (' + _.round(count / uniq[colums[o]].length * 100, 2) + '%)');
 	}).join(' dan ').value();
