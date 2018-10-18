@@ -51,7 +51,7 @@ $( document ).ready(async function() {
 
 	details				= d3.select(svg_dest + ' > svg').append('g')
 		.attr('id', 'details-wrapper')
-		.attr('transform', 'translate(10,10)');
+		.attr('transform', 'translate(10,' + (10 + ceil_size) + ')');
 
 	details.append('text')
 		.attr('id', 'ceil')
@@ -62,7 +62,7 @@ $( document ).ready(async function() {
 	details.append('text')
 		.attr('id', 'floor')
 		.attr('class', 'cursor-default')
-		.attr('y', ceil_size + 5)
+		.attr('y', ceil_size)
 		.style('font-size', (ceil_size / 3 * 2) + 'px')
 		.text('');
 

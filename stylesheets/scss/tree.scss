@@ -63,7 +63,8 @@ div#root {
 		}
 		g#details-wrapper {
 			text {
-				text-anchor : start; alignment-baseline : hanging;
+				text-anchor : start;
+				// alignment-baseline : hanging;
 				&#ceil {  }
 				&#floor {  }
 			}
