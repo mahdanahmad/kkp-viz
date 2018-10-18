@@ -5,11 +5,17 @@ const svg_id	= 'svg';
 
 const colored	= 3;
 
-let width, height, radius, svg, details, total, uniq;
+let width, height, radius, svg, details, total, uniq, dups;
 
 const ceil_size	= 24;
-const lgnd_wdth	= 175;
 const box_size	= 15;
+
+const lgnd_wdth	= 175;
+const lgnd_val	= [
+	{ class: 'min', text: 'Aggregate anggaran terkecil' },
+	{ class: 'max', text: 'Aggregate anggaran terbesar' },
+	{ class: 'duplicate', text: 'Keterangan terduplikasi' },
+]
 
 $( document ).ready(async function() {
 	const raw	= await d3.dsv(';', '/public/data.csv');
@@ -22,6 +28,8 @@ $( document ).ready(async function() {
 
 	await setMinMax(left);
 	await setMinMax(right);
+
+	dups		= await findDuplicate(right);
 
 	d3.select(svg_dest).selectAll('svg').remove();
 
@@ -64,20 +72,20 @@ $( document ).ready(async function() {
 	let legends	= d3.select(svg_dest+ ' > svg').append('g')
 		.attr('id', 'legend-wrapper')
 		.attr('transform', 'translate(10,' + (height - 40) + ')')
-			.selectAll('.legend').data([0,1]).enter().append('g').attr('class', 'legend').attr('transform', (o) => ('translate(' + (o * lgnd_wdth) + ',0)'));
+			.selectAll('.legend').data(lgnd_val).enter().append('g').attr('class', 'legend').attr('transform', (o, i) => ('translate(' + (i * lgnd_wdth) + ',0)'));
 
 	legends.append('rect')
 		.attr('x', 0)
 		.attr('y', 0)
 		.attr('width', box_size)
 		.attr('height', box_size)
-		.attr('class', (o) => (o ? 'max' : 'min'));
+		.attr('class', (o) => (o.class));
 
 	legends.append('text')
 		.attr('transform', 'translate(' + (box_size + 5) + ',' + (box_size / 2 + 1) + ')')
 		.attr('text-anchor', 'start')
 		.attr('alignment-baseline', 'middle')
-		.text((o) => ('Aggregate anggaran ' + (o ? 'terbesar' : 'terkecil')));
+		.text((o) => (o.text));
 
 });
 
@@ -114,6 +122,18 @@ function setMinMax(data) {
 	});
 }
 
+function findDuplicate(data) {
+	return new Promise((resolve, reject) => {
+		let formatted	= _.chain(data.children).flatMap((o) => o.children.map((m) => ({ parent: o.name, child: m.name }))).groupBy('child').filter((o) => (o.length > 1)).flatten().value();
+
+		formatted.forEach((o) => {
+			_.chain(data.children).find(['name', o.parent]).set('duplicate', 'duplicate').get('children').find(['name', o.child]).set('duplicate', 'duplicate').value();
+		});
+
+		resolve(_.chain(formatted).groupBy('child').mapValues((o) => (o.length)).value());
+	});
+}
+
 function defaultValues(data, col) {
 	let count	= _.chain(data).map((o) => parseInt(o.anggaran)).sum().value()
 	return ({
@@ -137,7 +157,7 @@ function createTree(data, align) {
 
 	let link	= canvas.append('g')
 		.selectAll('path').data(root.links()).enter().append('path')
-			.attr('class', (o) => (_.chain(o.target.data.related).concat([o.target.data.name, o.target.data.state]).map((d) => _.kebabCase(d)).join(' ').value()))
+			.attr('class', (o) => (_.chain(o.target.data.related).concat([o.target.data.name, o.target.data.state, o.target.data.duplicate]).map((d) => _.kebabCase(d)).join(' ').value()))
 			.attr('d', d3.linkRadial()
 			.angle(o => o.x)
 			.radius(o => o.y))
@@ -148,7 +168,7 @@ function createTree(data, align) {
 		.attr('stroke-linejoin', 'round')
 		.attr('stroke-width', 3)
 		.selectAll('g').data(root.descendants()).enter().append('g')
-			.attr('class', (o) => (_.chain(o.data.related).concat([o.data.name, o.data.state]).map((d) => _.kebabCase(d)).join(' ').value()))
+			.attr('class', (o) => (_.chain(o.data.related).concat([o.data.name, o.data.state, o.data.duplicate]).map((d) => _.kebabCase(d)).join(' ').value()))
 			.attr('transform', o => `rotate(${o.x * 180 / Math.PI - 90})translate(${o.y},0)`);
 
 	node.append('circle')
@@ -182,7 +202,7 @@ function onMouseover(o) {
 	svg.selectAll('path:not(.' + _.kebabCase(o.data.name) + ')').classed('unintended', true);
 
 	details.select('#ceil').text((o.parent.data.name !== 'hidden' ? (o.parent.data.name + ' > ') : '') + o.data.name + '. Total anggaran: ' + nFormatter(o.data.total) + ' (' + o.data.percentage + '%)');
-	details.select('#floor').text('Ditemukan dalam ' + constructDetailFloor((colums.indexOf(o.data.type) < 2 ? [2,3] : [0,1]), o.data.related));
+	details.select('#floor').text('Ditemukan dalam ' + constructDetailFloor((colums.indexOf(o.data.type) < 2 ? [2,3] : [0,1]), o.data.related) + '.' + (_.chain(dups).keys().includes(o.data.name).value() ? (' Terduplikasi dalam ' + dups[o.data.name] + ' kategori.') : ''));
 }
 
 function onMouseout() {

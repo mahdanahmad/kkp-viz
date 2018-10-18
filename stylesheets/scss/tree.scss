@@ -3,6 +3,7 @@
 
 $max-clr	: firebrick;
 $min-clr	: forestgreen;
+$dups-clr	: darkgoldenrod;
 
 a { cursor: pointer; text-decoration: none; color: black; }
 ul { list-style-type: none; margin: 0px; padding: 0px; }
@@ -58,6 +59,7 @@ div#root {
 				&.unintended { stroke-opacity: .1; }
 				&.min { stroke: $min-clr; stroke-width: 3; }
 				&.max { stroke: $max-clr; stroke-width: 3; }
+				&.duplicate { stroke: $dups-clr; stroke-width: 3; }
 			}
 		}
 		g#details-wrapper {
@@ -71,6 +73,7 @@ div#root {
 			rect {
 				&.min { fill: $min-clr; }
 				&.max { fill: $max-clr; }
+				&.duplicate { fill: $dups-clr; }
 			}
 		}
 	}
